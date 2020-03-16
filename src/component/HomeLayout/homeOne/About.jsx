@@ -21,6 +21,11 @@ class About extends Component {
               </div>
 
               <div className="col-lg-7 col-md-12">
+                <img
+                  className="w-25"
+                  src="/assets/images/logo/logo.png"
+                  alt="logo-cuerpo"
+                />
                 <div className="about-inner inner">
                   <div className="section-title">
                     <h2 className="title">{title}</h2>

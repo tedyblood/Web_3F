@@ -13,6 +13,7 @@ import About from "../component/HomeLayout/homeOne/About";
 import Portfolio from "../component/HomeLayout/homeOne/Portfolio";
 import BrandTwo from "../elements/BrandTwo";
 import Helmet from "../component/common/Helmet";
+import Contacto from "../elements/contact/ContactThree";
 
 //Importacion de Items
 import FAS from "../elements/Productos/FAS";
@@ -83,7 +84,7 @@ class MainDemo extends Component {
                 <div className="col-lg-3 col-md-6 col-12" key={i}>
                   <div className="blog blog-style--1">
                     <div className="thumbnail">
-                      <a href="/blog-details">
+                      <a href="#contacto">
                         <img
                           className="w-100"
                           src={`/assets/images/blog/blog-${value.images}.jpg`}
@@ -94,11 +95,11 @@ class MainDemo extends Component {
                     <div className="content">
                       <p className="blogtype">{value.category}</p>
                       <h4 className="title">
-                        <a href="/blog-details">{value.title}</a>
+                        <a href="#contacto">{value.title}</a>
                       </h4>
                       <div className="blog-btn">
-                        <a className="rn-btn" href="/blog-details">
-                          Leer Mas
+                        <a className="rn-btn" href="#contacto">
+                          Contáctanos
                         </a>
                       </div>
                     </div>
@@ -131,7 +132,7 @@ class MainDemo extends Component {
                 <div className="col-lg-3 col-md-6 col-12" key={i}>
                   <div className="blog blog-style--1">
                     <div className="thumbnail">
-                      <a href="/blog-details">
+                      <a href="#contacto">
                         <img
                           className="w-100"
                           src={`/assets/images/blog/blog-${value.images}.jpg`}
@@ -142,11 +143,11 @@ class MainDemo extends Component {
                     <div className="content">
                       <p className="blogtype">{value.category}</p>
                       <h4 className="title">
-                        <a href="/blog-details">{value.title}</a>
+                        <a href="#contacto">{value.title}</a>
                       </h4>
                       <div className="blog-btn">
-                        <a className="rn-btn" href="/blog-details">
-                          Leer Mas
+                        <a className="rn-btn" href="#contacto">
+                          Contáctanos
                         </a>
                       </div>
                     </div>
@@ -181,7 +182,7 @@ class MainDemo extends Component {
                 <div className="col-lg-3 col-md-6 col-12" key={i}>
                   <div className="blog blog-style--1">
                     <div className="thumbnail">
-                      <a href="/blog-details">
+                      <a href="#contacto">
                         <img
                           className="w-100"
                           src={`/assets/images/blog/blog-${value.images}.jpg`}
@@ -192,11 +193,11 @@ class MainDemo extends Component {
                     <div className="content">
                       <p className="blogtype">{value.category}</p>
                       <h4 className="title">
-                        <a href="/blog-details">{value.title}</a>
+                        <a href="#contacto">{value.title}</a>
                       </h4>
                       <div className="blog-btn">
-                        <a className="rn-btn" href="/blog-details">
-                          Leer Mas
+                        <a className="rn-btn" href="#contacto">
+                          Contáctanos
                         </a>
                       </div>
                     </div>
@@ -227,7 +228,7 @@ class MainDemo extends Component {
                 <div className="col-lg-3 col-md-6 col-12" key={i}>
                   <div className="blog blog-style--1">
                     <div className="thumbnail">
-                      <a href="/blog-details">
+                      <a href="#contacto">
                         <img
                           className="w-100"
                           src={`/assets/images/blog/blog-${value.images}.jpg`}
@@ -238,11 +239,11 @@ class MainDemo extends Component {
                     <div className="content">
                       <p className="blogtype">{value.category}</p>
                       <h4 className="title">
-                        <a href="/blog-details">{value.title}</a>
+                        <a href="#contacto">{value.title}</a>
                       </h4>
                       <div className="blog-btn">
-                        <a className="rn-btn" href="/blog-details">
-                          Leer Mas
+                        <a className="rn-btn" href="#contacto">
+                          Contáctanos
                         </a>
                       </div>
                     </div>
@@ -275,7 +276,7 @@ class MainDemo extends Component {
                 <div className="col-lg-3 col-md-6 col-12" key={i}>
                   <div className="blog blog-style--1">
                     <div className="thumbnail">
-                      <a href="/blog-details">
+                      <a href="#contacto">
                         <img
                           className="w-100"
                           src={`/assets/images/blog/blog-${value.images}.jpg`}
@@ -286,11 +287,11 @@ class MainDemo extends Component {
                     <div className="content">
                       <p className="blogtype">{value.category}</p>
                       <h4 className="title">
-                        <a href="/blog-details">{value.title}</a>
+                        <a href="#contacto">{value.title}</a>
                       </h4>
                       <div className="blog-btn">
-                        <a className="rn-btn" href="/blog-details">
-                          Leer Mas
+                        <a className="rn-btn" href="#contacto">
+                          Contáctanos
                         </a>
                       </div>
                     </div>
@@ -321,7 +322,7 @@ class MainDemo extends Component {
                   <div className="col-lg-3 col-md-6 col-12" key={i}>
                     <div className="blog blog-style--1">
                       <div className="thumbnail">
-                        <a href="/blog-details">
+                        <a href="#contacto">
                           <img
                             className="w-100"
                             src={`/assets/images/blog/blog-${value.images}.jpg`}
@@ -332,10 +333,10 @@ class MainDemo extends Component {
                       <div className="content">
                         <p className="blogtype">{value.category}</p>
                         <h4 className="title">
-                          <a href="/blog-details">{value.title}</a>
+                          <a href="#contacto">{value.title}</a>
                         </h4>
                         <div className="blog-btn">
-                          <a className="rn-btn" href="/blog-details">
+                          <a className="rn-btn" href="#contacto">
                             Leer Mas
                           </a>
                         </div>
@@ -367,7 +368,7 @@ class MainDemo extends Component {
                   <div className="col-lg-5 col-md-6 col-12" key={i}>
                     <div className="blog blog-style--1">
                       <div className="thumbnail">
-                        <a href="/blog-details">
+                        <a href="#contacto">
                           <img
                             className="w-100"
                             src={`/assets/images/blog/blog-${value.images}.jpg`}
@@ -378,10 +379,10 @@ class MainDemo extends Component {
                       <div className="content">
                         <p className="blogtype">{value.category}</p>
                         <h4 className="title">
-                          <a href="/blog-details">{value.title}</a>
+                          <a href="#contacto">{value.title}</a>
                         </h4>
                         <div className="blog-btn">
-                          <a className="rn-btn" href="/blog-details">
+                          <a className="rn-btn" href="#contacto">
                             Leer Mas
                           </a>
                         </div>
@@ -416,7 +417,7 @@ class MainDemo extends Component {
                   <div className="col-lg-3 col-md-6 col-12" key={i}>
                     <div className="blog blog-style--1">
                       <div className="thumbnail">
-                        <a href="/blog-details">
+                        <a href="#contacto">
                           <img
                             className="w-100"
                             src={`/assets/images/blog/blog-${value.images}.jpg`}
@@ -427,10 +428,10 @@ class MainDemo extends Component {
                       <div className="content">
                         <p className="blogtype">{value.category}</p>
                         <h4 className="title">
-                          <a href="/blog-details">{value.title}</a>
+                          <a href="#contacto">{value.title}</a>
                         </h4>
                         <div className="blog-btn">
-                          <a className="rn-btn" href="/blog-details">
+                          <a className="rn-btn" href="#contacto">
                             Leer Mas
                           </a>
                         </div>
@@ -444,7 +445,7 @@ class MainDemo extends Component {
         </div>
         {/* End FAMILIA Area */}
 
-        
+
 
         {/* Start Brand Area */}
         <div className="rn-brand-area brand-separation bg_color--5 pb--120">
@@ -452,6 +453,17 @@ class MainDemo extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <BrandTwo />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* End Brand Area */}
+        {/* Start Brand Area */}
+        <div id="contacto" className="rn-brand-area brand-separation bg_color--2 pb--120">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <Contacto contactImages="/assets/images/about/about-1.jpg" />
               </div>
             </div>
           </div>

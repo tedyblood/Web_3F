@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { FiCast, FiLayers, FiUsers, FiMonitor } from "react-icons/fi";
+// import IconSvg from "../../component/SVG/Svg";
 
 const ServiceList = [
   {
-    icon: <FiCast />,
+    icon: "FOAM_01",
     title: "Espuma Ecológica",
     description:
       "La nueva tecnología examina todos los compuestos utilizados en los espumógenos y evalúa el impacto de cada uno en el medio ambiente."
@@ -55,7 +56,8 @@ class ServiceTwo extends Component {
                 <div className="col-lg-6 col-md-6 col-sm-6 col-12" key={i}>
                   <a href="/service-details">
                     <div className="service service__style--2">
-                      <div className="icon">{val.icon}</div>
+                      {/* <div className="icon">{val.icon}</div> */}
+                      {/* <IconSvg name={val.icon} className="" /> */}
                       <div className="content">
                         <h3 className="title">{val.title}</h3>
                         <p>{val.description}</p>

@@ -8,7 +8,7 @@ class Header extends Component {
     this.menuTrigger = this.menuTrigger.bind(this);
     this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
     //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
-    window.addEventListener("load", function() {
+    window.addEventListener("load", function () {
       console.log("All assets are loaded");
     });
   }
@@ -25,7 +25,7 @@ class Header extends Component {
     var elements = document.querySelectorAll(".has-droupdown > a");
     for (var i in elements) {
       if (elements.hasOwnProperty(i)) {
-        elements[i].onclick = function() {
+        elements[i].onclick = function () {
           this.parentElement
             .querySelector(".submenu")
             .classList.toggle("active");
@@ -61,7 +61,7 @@ class Header extends Component {
       logoUrl = (
         <img
           className="Logo_3F"
-          src="/assets/images/logo/logo.jpg"
+          src="/assets/images/logo/logo.png"
           alt="Digital Agency"
         />
       );

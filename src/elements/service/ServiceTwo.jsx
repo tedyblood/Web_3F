@@ -1,31 +1,43 @@
 import React, { Component } from "react";
 import { FiCast, FiLayers, FiUsers, FiMonitor } from "react-icons/fi";
-// import IconSvg from "../../component/SVG/Svg";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller
+} from "react-scroll";
 
 const ServiceList = [
   {
     icon: "FOAM_01",
     title: "Espuma Ecológica",
     description:
-      "La nueva tecnología examina todos los compuestos utilizados en los espumógenos y evalúa el impacto de cada uno en el medio ambiente."
+      "La nueva tecnología examina todos los compuestos utilizados en los espumógenos y evalúa el impacto de cada uno en el medio ambiente.",
+    link: "Espuma"
   },
+
   {
     icon: <FiLayers />,
     title: "Absorbentes de Hidrocarburos.",
     description:
-      "Absorbente vegetal 100% natural, fabricado a partir del pino con varios tratamientos hasta obtener una celulosa pura, adecuada para la absorción de los líquidos hidrófobos."
+      "Absorbente vegetal 100% natural, fabricado a partir del pino con varios tratamientos hasta obtener una celulosa pura, adecuada para la absorción de los líquidos hidrófobos.",
+    link: "Espuma"
   },
   {
     icon: <FiUsers />,
     title: "Neutralizantes de Gases Tóxicos",
     description:
-      "Combinación de tensoactivos y de polímeros. Los tensoactivos están seleccionados por su alto poder espumante y su estabilidad. El polímero es muy hidrófilo y tiene sitios activos captadores de iones."
+      "Combinación de tensoactivos y de polímeros. Los tensoactivos están seleccionados por su alto poder espumante y su estabilidad. El polímero es muy hidrófilo y tiene sitios activos captadores de iones.",
+    link: "Absorbentes"
   },
   {
     icon: <FiMonitor />,
     title: "Espumas convencionales",
     description:
-      "3F es especializado en la creación de productos químicos estudiados para dar la mejor respuesta a los servicios de seguridad, industriales y municipales. "
+      "3F es especializado en la creación de productos químicos estudiados para dar la mejor respuesta a los servicios de seguridad, industriales y municipales. ",
+    link: "Neutralizantes"
   }
 ];
 
@@ -37,38 +49,49 @@ class ServiceTwo extends Component {
       imgSF = "/assets/images/logo/3F_SMART-FOAM_SP-3.png";
     return (
       <React.Fragment>
-        <div className="row">
-          <div className="col-lg-4 col-12">
-            <div className="section-title mt--30 mt_md--5 mt_mobile--5 mb_mobile--10">
-              <h2 className="title">{title}</h2>
-              <p dangerouslySetInnerHTML={{ __html: description }}></p>
-              <img className="Logo_3F" src={imgSF} alt="3F Latam" />
-              <div className="service-btn">
-                <a className="btn-transparent rn-btn-dark" href="#contacto">
-                  <span className="text">Solicita un presupuesto</span>
-                </a>
+        <Element name="Espuma">
+          <div className="row">
+            <div className="col-lg-4 col-12">
+              <div className="section-title mt--30 mt_md--5 mt_mobile--5 mb_mobile--10">
+                <h2 className="title">{title}</h2>
+                <p dangerouslySetInnerHTML={{ __html: description }}></p>
+                <img className="Logo_3F" src={imgSF} alt="3F Latam" />
+                <div className="service-btn">
+                  <a className="btn-transparent rn-btn-dark" href="#contacto">
+                    <span className="text">Solicita un presupuesto</span>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-8 col-12 mt_md--50">
-            <div className="row service-one-wrapper">
-              {ServiceList.map((val, i) => (
-                <div className="col-lg-6 col-md-6 col-sm-6 col-12" key={i}>
-                  <a href="#contacto">
+            <div className="col-lg-8 col-12 mt_md--50">
+              <div className="row service-one-wrapper">
+                {ServiceList.map((val, i) => (
+                  <div className="col-lg-6 col-md-6 col-sm-6 col-12" key={i}>
                     <div className="service service__style--2">
                       {/* <div className="icon">{val.icon}</div> */}
                       {/* <IconSvg name={val.icon} className="" /> */}
                       <div className="content">
                         <h3 className="title">{val.title}</h3>
                         <p>{val.description}</p>
+                        <Link
+                          spy={true}
+                          smooth={true}
+                          offset={-200}
+                          duration={500}
+                          delay={500}
+                          to="contacto"
+                          className="rn-btn"
+                        >
+                          Contáctanos
+                        </Link>
                       </div>
                     </div>
-                  </a>
-                </div>
-              ))}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
+        </Element>
       </React.Fragment>
     );
   }

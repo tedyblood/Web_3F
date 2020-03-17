@@ -7,7 +7,7 @@ class About extends Component {
         "3F es una compañía dirigida por personas altamente experimentadas que han sido una fuerza impulsora en su propia área de experiencia dentro de la industria de protección contra incendios durante las últimas tres décadas.";
     return (
       <React.Fragment>
-        <div className="about-wrapper">
+        <div className="about-wrapper" name="Nosotros">
           <div className="container">
             <div className="row row--35 align-items-center">
               <div className="col-lg-5 col-md-12">

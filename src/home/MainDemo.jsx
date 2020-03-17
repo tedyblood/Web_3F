@@ -26,6 +26,15 @@ import POK from "../elements/Productos/POK";
 import Ruth_Lee from "../elements/Productos/Ruth_Lee";
 import EQUIPOSESPUMA from "../elements/Productos/EQUIPOSESPUMA";
 
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller
+} from "react-scroll";
+
 class MainDemo extends Component {
   render() {
     // const FAS = FAS.slice(0, 3);
@@ -55,15 +64,16 @@ class MainDemo extends Component {
         <div className="service-area ptb--80  bg_image bg_image--23">
           <div className="container">
             <ServiceTwo />
-
           </div>
         </div>
         {/* Start FAMILIA Area */}
+
         <div className="rn-blog-area pt--120 bg_color--1 mb-dec--30">
           <div className="container">
             <div className="row align-items-end">
               <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                 <div className="section-title text-left">
+                  <Element name="EquiposE" />
                   <h3>3F Equipos</h3>
                   <h2>Equipos de Espuma contra Incendios.</h2>
                   <p>
@@ -75,28 +85,53 @@ class MainDemo extends Component {
                 </div>
               </div>
             </div>
+
             <div className="row mt--60 mt_sm--40">
               {EQUIPOSESPUMA.map((value, i) => (
                 <div className="col-lg-3 col-md-6 col-12" key={i}>
                   <div className="blog blog-style--1">
                     <div className="thumbnail">
-                      <a href="#contacto">
+                      <Link
+                        spy={true}
+                        smooth={true}
+                        offset={-200}
+                        duration={500}
+                        delay={500}
+                        to="contacto"
+                      >
                         <img
                           className="w-100"
                           src={`/assets/images/blog/blog-${value.images}.jpg`}
                           alt="Blog Images"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="content">
                       <p className="blogtype">{value.category}</p>
                       <h4 className="title">
-                        <a href="#contacto">{value.title}</a>
+                        <Link
+                          spy={true}
+                          smooth={true}
+                          offset={-200}
+                          duration={500}
+                          delay={500}
+                          to="contacto"
+                        >
+                          {value.title}
+                        </Link>
                       </h4>
                       <div className="blog-btn">
-                        <a className="rn-btn" href="#contacto">
+                        <Link
+                          spy={true}
+                          smooth={true}
+                          offset={-200}
+                          duration={500}
+                          delay={500}
+                          to="contacto"
+                          className="rn-btn"
+                        >
                           Contáctanos
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -112,6 +147,7 @@ class MainDemo extends Component {
             <div className="row align-items-end">
               <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                 <div className="section-title text-left">
+                  <Element name="fas" />
                   <h3>FAS</h3>
                   <h2>Fire Attack System</h2>
                   <p>
@@ -128,23 +164,47 @@ class MainDemo extends Component {
                 <div className="col-lg-3 col-md-6 col-12" key={i}>
                   <div className="blog blog-style--1">
                     <div className="thumbnail">
-                      <a href="#contacto">
+                      <Link
+                        spy={true}
+                        smooth={true}
+                        offset={-200}
+                        duration={500}
+                        delay={500}
+                        to="contacto"
+                      >
                         <img
                           className="w-100"
                           src={`/assets/images/blog/blog-${value.images}.jpg`}
                           alt="Blog Images"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="content">
                       <p className="blogtype">{value.category}</p>
                       <h4 className="title">
-                        <a href="#contacto">{value.title}</a>
+                        <Link
+                          spy={true}
+                          smooth={true}
+                          offset={-200}
+                          duration={500}
+                          delay={500}
+                          to="contacto"
+                        >
+                          {value.title}
+                        </Link>
                       </h4>
                       <div className="blog-btn">
-                        <a className="rn-btn" href="#contacto">
+                        <Link
+                          spy={true}
+                          smooth={true}
+                          offset={-200}
+                          duration={500}
+                          delay={500}
+                          to="contacto"
+                          className="rn-btn"
+                        >
                           Contáctanos
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -160,6 +220,7 @@ class MainDemo extends Component {
             <div className="row align-items-end">
               <div className="col-lg-8 col-md-12 col-sm-12 col-12">
                 <div className="section-title text-left">
+                  <Element name="ctd" />
                   <h3>CTD</h3>
                   <h2>Sistema de Dosificación Automáticos</h2>
                   <p>
@@ -178,23 +239,47 @@ class MainDemo extends Component {
                 <div className="col-lg-3 col-md-6 col-12" key={i}>
                   <div className="blog blog-style--1">
                     <div className="thumbnail">
-                      <a href="#contacto">
+                      <Link
+                        spy={true}
+                        smooth={true}
+                        offset={-200}
+                        duration={500}
+                        delay={500}
+                        to="contacto"
+                      >
                         <img
                           className="w-100"
                           src={`/assets/images/blog/blog-${value.images}.jpg`}
                           alt="Blog Images"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="content">
                       <p className="blogtype">{value.category}</p>
                       <h4 className="title">
-                        <a href="#contacto">{value.title}</a>
+                        <Link
+                          spy={true}
+                          smooth={true}
+                          offset={-200}
+                          duration={500}
+                          delay={500}
+                          to="contacto"
+                        >
+                          {value.title}
+                        </Link>
                       </h4>
                       <div className="blog-btn">
-                        <a className="rn-btn" href="#contacto">
+                        <Link
+                          spy={true}
+                          smooth={true}
+                          offset={-200}
+                          duration={500}
+                          delay={500}
+                          to="contacto"
+                          className="rn-btn"
+                        >
                           Contáctanos
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -210,6 +295,7 @@ class MainDemo extends Component {
             <div className="row align-items-end">
               <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                 <div className="section-title text-left">
+                  <Element name="FIREMIKS" />
                   <h3>FIREMIKS</h3>
                   <h2>Sistema mecánico de dosificación.</h2>
                   <p>
@@ -224,23 +310,47 @@ class MainDemo extends Component {
                 <div className="col-lg-3 col-md-6 col-12" key={i}>
                   <div className="blog blog-style--1">
                     <div className="thumbnail">
-                      <a href="#contacto">
+                      <Link
+                        spy={true}
+                        smooth={true}
+                        offset={-200}
+                        duration={500}
+                        delay={500}
+                        to="contacto"
+                      >
                         <img
                           className="w-100"
                           src={`/assets/images/blog/blog-${value.images}.jpg`}
                           alt="Blog Images"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="content">
                       <p className="blogtype">{value.category}</p>
                       <h4 className="title">
-                        <a href="#contacto">{value.title}</a>
+                        <Link
+                          spy={true}
+                          smooth={true}
+                          offset={-200}
+                          duration={500}
+                          delay={500}
+                          to="contacto"
+                        >
+                          {value.title}
+                        </Link>
                       </h4>
                       <div className="blog-btn">
-                        <a className="rn-btn" href="#contacto">
+                        <Link
+                          spy={true}
+                          smooth={true}
+                          offset={-200}
+                          duration={500}
+                          delay={500}
+                          to="contacto"
+                          className="rn-btn"
+                        >
                           Contáctanos
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -256,6 +366,7 @@ class MainDemo extends Component {
             <div className="row align-items-end">
               <div className="col-lg-9 col-md-12 col-sm-12 col-12">
                 <div className="section-title text-left">
+                  <Element name="rcy" />
                   <h3>RCY</h3>
                   <h2>Especialista en textiles técnicos.</h2>
                   <p>
@@ -272,23 +383,47 @@ class MainDemo extends Component {
                 <div className="col-lg-3 col-md-6 col-12" key={i}>
                   <div className="blog blog-style--1">
                     <div className="thumbnail">
-                      <a href="#contacto">
+                      <Link
+                        spy={true}
+                        smooth={true}
+                        offset={-200}
+                        duration={500}
+                        delay={500}
+                        to="contacto"
+                      >
                         <img
                           className="w-100"
                           src={`/assets/images/blog/blog-${value.images}.jpg`}
                           alt="Blog Images"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="content">
                       <p className="blogtype">{value.category}</p>
                       <h4 className="title">
-                        <a href="#contacto">{value.title}</a>
+                        <Link
+                          spy={true}
+                          smooth={true}
+                          offset={-200}
+                          duration={500}
+                          delay={500}
+                          to="contacto"
+                        >
+                          {value.title}
+                        </Link>
                       </h4>
                       <div className="blog-btn">
-                        <a className="rn-btn" href="#contacto">
+                        <Link
+                          spy={true}
+                          smooth={true}
+                          offset={-200}
+                          duration={500}
+                          delay={500}
+                          to="contacto"
+                          className="rn-btn"
+                        >
                           Contáctanos
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -304,6 +439,7 @@ class MainDemo extends Component {
             <div className="row align-items-end">
               <div className="col-lg-8 col-md-12 col-sm-12 col-12">
                 <div className="section-title text-left">
+                  <Element name="scorpe" />
                   <h3>Scorpe</h3>
                   <h2>Herramientas y equipos de Rescate para Bomberos.</h2>
                   <p>
@@ -318,23 +454,47 @@ class MainDemo extends Component {
                   <div className="col-lg-3 col-md-6 col-12" key={i}>
                     <div className="blog blog-style--1">
                       <div className="thumbnail">
-                        <a href="#contacto">
+                        <Link
+                          spy={true}
+                          smooth={true}
+                          offset={-200}
+                          duration={500}
+                          delay={500}
+                          to="contacto"
+                        >
                           <img
                             className="w-100"
                             src={`/assets/images/blog/blog-${value.images}.jpg`}
                             alt="Blog Images"
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className="content">
                         <p className="blogtype">{value.category}</p>
                         <h4 className="title">
-                          <a href="#contacto">{value.title}</a>
+                          <Link
+                            spy={true}
+                            smooth={true}
+                            offset={-200}
+                            duration={500}
+                            delay={500}
+                            to="contacto"
+                          >
+                            {value.title}
+                          </Link>
                         </h4>
                         <div className="blog-btn">
-                          <a className="rn-btn" href="#contacto">
+                          <Link
+                            spy={true}
+                            smooth={true}
+                            offset={-200}
+                            duration={500}
+                            delay={500}
+                            to="contacto"
+                            className="rn-btn"
+                          >
                             Leer Mas
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -351,6 +511,7 @@ class MainDemo extends Component {
             <div className="row align-items-end">
               <div className="col-lg-8 col-md-12 col-sm-12 col-12">
                 <div className="section-title text-left">
+                  <Element name="pok" />
                   <h3>POK</h3>
                   <h2>Boquillas y Monitores para uso bomberil.</h2>
                   <p>
@@ -364,23 +525,47 @@ class MainDemo extends Component {
                   <div className="col-lg-5 col-md-6 col-12" key={i}>
                     <div className="blog blog-style--1">
                       <div className="thumbnail">
-                        <a href="#contacto">
+                        <Link
+                          spy={true}
+                          smooth={true}
+                          offset={-200}
+                          duration={500}
+                          delay={500}
+                          to="contacto"
+                        >
                           <img
                             className="w-100"
                             src={`/assets/images/blog/blog-${value.images}.jpg`}
                             alt="Blog Images"
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className="content">
                         <p className="blogtype">{value.category}</p>
                         <h4 className="title">
-                          <a href="#contacto">{value.title}</a>
+                          <Link
+                            spy={true}
+                            smooth={true}
+                            offset={-200}
+                            duration={500}
+                            delay={500}
+                            to="contacto"
+                          >
+                            {value.title}
+                          </Link>
                         </h4>
                         <div className="blog-btn">
-                          <a className="rn-btn" href="#contacto">
+                          <Link
+                            spy={true}
+                            smooth={true}
+                            offset={-200}
+                            duration={500}
+                            delay={500}
+                            to="contacto"
+                            className="rn-btn"
+                          >
                             Leer Mas
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -397,6 +582,7 @@ class MainDemo extends Component {
             <div className="row align-items-end">
               <div className="col-lg-10 col-md-12 col-sm-12 col-12">
                 <div className="section-title text-left">
+                  <Element name="rl" />
                   <h3>Ruth Lee</h3>
                   <h2>
                     Maniquíes de formación para profesionales de rescate.{" "}
@@ -413,23 +599,47 @@ class MainDemo extends Component {
                   <div className="col-lg-3 col-md-6 col-12" key={i}>
                     <div className="blog blog-style--1">
                       <div className="thumbnail">
-                        <a href="#contacto">
+                        <Link
+                          spy={true}
+                          smooth={true}
+                          offset={-200}
+                          duration={500}
+                          delay={500}
+                          to="contacto"
+                        >
                           <img
                             className="w-100"
                             src={`/assets/images/blog/blog-${value.images}.jpg`}
                             alt="Blog Images"
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className="content">
                         <p className="blogtype">{value.category}</p>
                         <h4 className="title">
-                          <a href="#contacto">{value.title}</a>
+                          <Link
+                            spy={true}
+                            smooth={true}
+                            offset={-200}
+                            duration={500}
+                            delay={500}
+                            to="contacto"
+                          >
+                            {value.title}
+                          </Link>
                         </h4>
                         <div className="blog-btn">
-                          <a className="rn-btn" href="#contacto">
+                          <Link
+                            spy={true}
+                            smooth={true}
+                            offset={-200}
+                            duration={500}
+                            delay={500}
+                            to="contacto"
+                            className="rn-btn"
+                          >
                             Leer Mas
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -440,8 +650,6 @@ class MainDemo extends Component {
           </div>
         </div>
         {/* End FAMILIA Area */}
-
-
 
         {/* Start Brand Area */}
         <div className="rn-brand-area brand-separation bg_color--5 pb--120">
@@ -455,8 +663,16 @@ class MainDemo extends Component {
         </div>
         {/* End Brand Area */}
         {/* Start Brand Area */}
-        <div id="contacto" className="rn-brand-area brand-separation bg_color--2 pb--120">
+        <div
+          id="contacto"
+          className="rn-brand-area brand-separation bg_color--2 pb--120"
+        >
           <div className="container">
+            <div className="col-lg-10 col-md-12 col-sm-12 col-12">
+              <div className="section-title text-left">
+                <h2>Hablemos</h2>
+              </div>
+            </div>
             <div className="row">
               <div className="col-lg-12">
                 <Contacto contactImages="/assets/images/about/about-1.jpg" />

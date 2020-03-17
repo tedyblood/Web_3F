@@ -1,5 +1,13 @@
 import React, { Component } from "react";
 import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller
+} from "react-scroll";
+import {
   FaTwitter,
   FaInstagram,
   FaFacebookF,
@@ -22,11 +30,28 @@ class Footer extends Component {
               <div className="col-lg-6">
                 <div className="footer-left">
                   <div className="inner">
-                    <span>3F</span>
-                    <h2>Equipos profesionales.</h2>
-                    <a className="rn-button-style--2" href="#">
+                    <img
+                      className="Logo_3F"
+                      src="/assets/images/logo/logo.png"
+                      alt="3F Latam"
+                    />
+                    <span>
+                      Somos es una empresa dirigida por personas de experiencia
+                      demostrada por su conocimiento en la lucha contra
+                      incendios desde hace más de 20 años.
+                    </span>
+
+                    <Link
+                      className="rn-button-style--2"
+                      spy={true}
+                      smooth={true}
+                      offset={-200}
+                      duration={500}
+                      delay={500}
+                      to="contacto"
+                    >
                       <span>Contacto</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -39,13 +64,40 @@ class Footer extends Component {
                         <h4>Enlaces</h4>
                         <ul className="ft-link">
                           <li>
-                            <a href="/portfolio">Nosotros</a>
+                            <Link
+                              spy={true}
+                              smooth={true}
+                              offset={-200}
+                              duration={500}
+                              delay={500}
+                              to="Nosotros"
+                            >
+                              Nosotros
+                            </Link>
                           </li>
                           <li>
-                            <a href="/about">Productos</a>
+                            <Link
+                              spy={true}
+                              smooth={true}
+                              offset={-200}
+                              duration={500}
+                              delay={500}
+                              to="Espuma"
+                            >
+                              Productos
+                            </Link>
                           </li>
                           <li>
-                            <a href="/contact">Contacto</a>
+                            <Link
+                              spy={true}
+                              smooth={true}
+                              offset={-200}
+                              duration={500}
+                              delay={500}
+                              to="contacto"
+                            >
+                              Contacto
+                            </Link>
                           </li>
                         </ul>
                       </div>

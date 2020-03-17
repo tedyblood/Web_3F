@@ -44,7 +44,7 @@ class ServiceTwo extends Component {
               <p dangerouslySetInnerHTML={{ __html: description }}></p>
               <img className="Logo_3F" src={imgSF} alt="3F Latam" />
               <div className="service-btn">
-                <a className="btn-transparent rn-btn-dark" href="/#">
+                <a className="btn-transparent rn-btn-dark" href="#contacto">
                   <span className="text">Solicita un presupuesto</span>
                 </a>
               </div>
@@ -54,7 +54,7 @@ class ServiceTwo extends Component {
             <div className="row service-one-wrapper">
               {ServiceList.map((val, i) => (
                 <div className="col-lg-6 col-md-6 col-sm-6 col-12" key={i}>
-                  <a href="/service-details">
+                  <a href="#contacto">
                     <div className="service service__style--2">
                       {/* <div className="icon">{val.icon}</div> */}
                       {/* <IconSvg name={val.icon} className="" /> */}

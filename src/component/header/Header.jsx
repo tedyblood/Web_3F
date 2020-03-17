@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { FiX, FiMenu } from "react-icons/fi";
+
+import { Link, animateScroll as scroll } from "react-scroll";
 
 class Header extends Component {
   constructor(props) {
@@ -81,7 +83,9 @@ class Header extends Component {
             <nav className="mainmenunav d-lg-block">
               <ul className="mainmenu">
                 <li className="has-droupdown">
-                  <Link to="#">Inicio</Link>
+                  <Link activeClass="active" to="contacto" spy={true} smooth={true} offset={-200} duration={500} delay={500}>
+                    Inicio
+        </Link>
                 </li>
                 <li className="has-droupdown">
                   <Link to="#nosotros">Nosotros</Link>

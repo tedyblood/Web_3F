@@ -54,12 +54,7 @@ class MainDemo extends Component {
         <div className="service-area ptb--80  bg_image bg_image--23">
           <div className="container">
             <ServiceTwo />
-            <whatsapputton
-              phone="7712345678"
-              dialcode="44"
-              text="hey there lets chat!"
-              label="Start Chat"
-            ></whatsapputton>
+
           </div>
         </div>
         {/* Start FAMILIA Area */}

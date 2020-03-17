@@ -37,24 +37,24 @@ class Header extends Component {
     let logoUrl;
     if (logo === "light") {
       logoUrl = (
-        <img src="/assets/images/logo/logo-light.png" alt="Digital Agency" />
+        <img src="/assets/images/logo/logo-light.png" alt="3F Latam" />
       );
     } else if (logo === "dark") {
       logoUrl = (
-        <img src="/assets/images/logo/logo-dark.png" alt="Digital Agency" />
+        <img src="/assets/images/logo/logo-dark.png" alt="3F Latam" />
       );
     } else if (logo === "symbol-dark") {
       logoUrl = (
         <img
           src="/assets/images/logo/logo-symbol-dark.png"
-          alt="Digital Agency"
+          alt="3F Latam"
         />
       );
     } else if (logo === "symbol-light") {
       logoUrl = (
         <img
           src="/assets/images/logo/logo-symbol-light.png"
-          alt="Digital Agency"
+          alt="3F Latam"
         />
       );
     } else {
@@ -62,7 +62,7 @@ class Header extends Component {
         <img
           className="Logo_3F"
           src="/assets/images/logo/logo.png"
-          alt="Digital Agency"
+          alt="3F Latam"
         />
       );
     }
@@ -81,150 +81,21 @@ class Header extends Component {
             <nav className="mainmenunav d-lg-block">
               <ul className="mainmenu">
                 <li className="has-droupdown">
-                  <Link to="#">Home</Link>
-                  <ul className="submenu">
-                    <li>
-                      <Link to="/main-demo">Main Demo</Link>
-                    </li>
-                    <li>
-                      <Link to="/dark-main-demo">Main Demo Dark</Link>
-                    </li>
-                    <li>
-                      <Link to="/creative-agency">Creative Agency</Link>
-                    </li>
-                    <li>
-                      <Link to="/creative-landing">Creative One Page</Link>
-                    </li>
-                    <li>
-                      <Link to="/creative-portfolio">Creative Portfolio</Link>
-                    </li>
-                    <li>
-                      <Link to="/personal-portfolio">Personal Portfolio</Link>
-                    </li>
-                    <li>
-                      <Link to="/portfolio-landing">Portfolio One Page</Link>
-                    </li>
-                    <li>
-                      <Link to="/dark-portfolio-landing">
-                        Portfolio One Page 02
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/digital-agency">Digital Agency</Link>
-                    </li>
-                    <li>
-                      <Link to="/startup">Startup</Link>
-                    </li>
-                    <li>
-                      <Link to="/paralax">Paralax</Link>
-                    </li>
-                    <li>
-                      <Link to="/portfolio-home">Minimal Portfolio</Link>
-                    </li>
-                    <li>
-                      <Link to="/business">Business</Link>
-                    </li>
-                    <li>
-                      <Link to="/home-particles">Home Particles</Link>
-                    </li>
-                    <li>
-                      <Link to="/studio-agency">Studio Agency</Link>
-                    </li>
-                    <li>
-                      <Link to="/designer-portfolio">Designer Portfolio</Link>
-                    </li>
-                  </ul>
+                  <Link to="#">Inicio</Link>
                 </li>
                 <li className="has-droupdown">
-                  <Link to="/service">Service</Link>
-                  <ul className="submenu">
-                    <li>
-                      <Link to="/service">Service</Link>
-                    </li>
-                    <li>
-                      <Link to="/service-details">Service Details</Link>
-                    </li>
-                  </ul>
+                  <Link to="#nosotros">Nosotros</Link>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link to="#servicios">Servicios</Link>
                 </li>
 
-                <li className="has-droupdown">
-                  <Link to="#pages">Pages</Link>
-                  <ul className="submenu">
-                    <li>
-                      <Link to="/blog">Blog List</Link>
-                    </li>
-                    <li>
-                      <Link to="/blog-details">Blog Details</Link>
-                    </li>
-                    <li>
-                      <Link to="/service">Service</Link>
-                    </li>
-                    <li>
-                      <Link to="/service-details">Service Details</Link>
-                    </li>
-                    <li>
-                      <Link to="/portfolio">Portfolio</Link>
-                    </li>
-                    <li>
-                      <Link to="/portfolio-details">Portfolio Details</Link>
-                    </li>
-                    <li>
-                      <Link to="/404">404</Link>
-                    </li>
-                  </ul>
-                </li>
-                <li className="has-droupdown">
-                  <Link to="#">Blocks</Link>
-                  <ul className="submenu">
-                    <li>
-                      <Link to="/portfolio">Portfolio</Link>
-                    </li>
-                    <li>
-                      <Link to="/team">Team</Link>
-                    </li>
-                    <li>
-                      <Link to="/service">Service</Link>
-                    </li>
-                    <li>
-                      <Link to="/video-popup">Video Popup</Link>
-                    </li>
-                    <li>
-                      <Link to="/progressbar">Progressbar</Link>
-                    </li>
-                    <li>
-                      <Link to="/gallery">Gallery</Link>
-                    </li>
-                    <li>
-                      <Link to="/counters">Counters</Link>
-                    </li>
-                    <li>
-                      <Link to="/blog">Blog List</Link>
-                    </li>
-                    <li>
-                      <Link to="/clint-logo">Clint Logo</Link>
-                    </li>
-                    <li>
-                      <Link to="/contact-form">Contact Form</Link>
-                    </li>
-                    <li>
-                      <Link to="/google-map">Google Map</Link>
-                    </li>
-                    <li>
-                      <Link to="/columns">Columns</Link>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <Link to="/contact">Contact</Link>
-                </li>
+
               </ul>
             </nav>
             <div className="header-btn">
               <a className="rn-btn" href="#">
-                <span>buy now</span>
+                <span>Contacto</span>
               </a>
             </div>
             {/* Start Humberger Menu  */}

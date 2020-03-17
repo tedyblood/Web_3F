@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import {Helmet} from 'react-helmet'
+import { Helmet } from 'react-helmet'
 
-class PageHelmet extends Component{
-    render(){
-        return(
+class PageHelmet extends Component {
+    render() {
+        return (
             <React.Fragment>
                 <Helmet>
-                    <title>{this.props.pageTitle} || React Multipurpose Template </title>
-                    <meta name="description" content="Trydo – Multipurpose React Template is a multi-use React template. It is designed to go well with multi-purpose websites. Trydo React Template will create that various landing Template, Creative Agency, And Corporate Website ." />
+                    <title>{this.props.pageTitle} || Smart Foams </title>
+                    <meta name="description" content="Espumas contra incendios y espuma y equipos contra incendios" />
                 </Helmet>
             </React.Fragment>
         )

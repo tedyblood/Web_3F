@@ -89,6 +89,9 @@
         visibility: visible;
       }
     }
+    svg{fill:$theme-color}
+    svg:hover{fill:white}
+    
     .icon {
       font-size: 54px;
       font-weight: 400;
@@ -141,6 +144,7 @@
       }
     }
     &:hover {
+      fill:white;
       box-shadow: 0 10px 25px 10px rgba(0, 0, 0, 0.1);
       transform: translateY(-5px);
       &::before {
@@ -246,6 +250,7 @@
     }
     &:hover {
       border: 2px solid $theme-color;
+      
       &::before {
         border-radius: 0;
       }

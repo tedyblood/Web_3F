@@ -10,6 +10,19 @@ class ContactThree extends Component {
             rnMessage: '',
         };
     }
+    handleSubmit(event) {
+        event.preventDefault();
+
+        const express = require('express');
+        const app = express();
+
+        app.post('/send', this.props.rnName, function () {
+            console.log("Serviro recibe el mensaje")
+        })
+
+
+
+    }
     render() {
         return (
             <div className="contact-form--1">
@@ -22,7 +35,7 @@ class ContactThree extends Component {
                                     <a href="mailto:export@3famericas.com"> export@3famericas.com</a> </p>
                             </div>
                             <div className="form-wrapper">
-                                <form>
+                                <form onSubmit={this.handleSubmit}>
                                     <label htmlFor="item01">
                                         <input
                                             type="text"

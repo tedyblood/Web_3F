@@ -14,6 +14,7 @@ import Portfolio from "../component/HomeLayout/homeOne/Portfolio";
 import BrandTwo from "../elements/BrandTwo";
 import Helmet from "../component/common/Helmet";
 import Contacto from "../elements/contact/ContactThree";
+import WA from "../component/whatsapp/Whatsapp";
 
 //Importacion de Items
 import FAS from "../elements/Productos/FAS";
@@ -472,7 +473,7 @@ class MainDemo extends Component {
           </ScrollToTop>
         </div>
         {/* End Back To Top */}
-
+        <WA />
         <Footer />
       </Fragment>
     );

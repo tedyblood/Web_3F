@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, "/public"))); //carga el website com
 
 app.post("/send", (req, res) => {
   //declaramos la ruta a la que se conectara la forma
-  //console.log(req.body);
+  console.log(req.body);
   const formData = { ...req.body }; // asignamos a formData el contenido de los campos de la forma
 
   async function main() {

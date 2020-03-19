@@ -13,6 +13,7 @@ import {
   FaFacebookF,
   FaLinkedinIn
 } from "react-icons/fa";
+import Mailto from "react-protected-mailto";
 
 const SocialShare = [
   { Social: <FaFacebookF />, link: "https://www.facebook.com/" },
@@ -36,9 +37,15 @@ class Footer extends Component {
                       alt="3F Latam"
                     />
                     <span>
-                      Somos es una empresa dirigida por personas de experiencia
-                      demostrada por su conocimiento en la lucha contra
-                      incendios desde hace más de 20 años.
+                      Somos una empresa reconocida a nivel mundial, que pone a
+                      su disposición una amplia gama de productos para prevenir
+                      y actuar en todas las situaciones extremas de emergencias.
+                      Contamos con personal especializado, brindando así
+                      soluciones completas, comprobadas y certificadas a través
+                      de organismos internacionales. Nuestros servicios se
+                      extienden desde el soporte técnico, asesoría – evaluación
+                      y la realización de estudios personalizados, capacitación,
+                      mantenimiento y servicio post-ventas.
                     </span>
 
                     <Link
@@ -109,12 +116,16 @@ class Footer extends Component {
                         <h4>Hablemos</h4>
                         <ul className="ft-link">
                           <li>
-                            <a href="mailto:admin@example.com">
-                              admin@example.com
-                            </a>
+                            <a href="tel:0050762765105">+507 6276-5105</a>
                           </li>
                           <li>
-                            <a href="mailto:hr@example.com">hr@example.com</a>
+                            <Mailto
+                              email="ventas@3famericas.com"
+                              headers={
+                                ({ subject: "Click en correo del sitio web" },
+                                { cc: "ventas@3famericas.com" })
+                              }
+                            />
                           </li>
                         </ul>
 

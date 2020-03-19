@@ -13,14 +13,14 @@ const ServiceList = [
   {
     icon: "ROTO",
     title: "Sin Flúor",
-    description: `Espuma sin PFCs, son indestructibles y se quedan en el medio ambiente para SIEMPRE,
+    description: `Espuma sin PFCs. Los PFCs son indestructibles y se quedan en el medio ambiente para SIEMPRE,
       `
   },
   {
     icon: "AGUA",
     title: "Sin Solvente",
     description:
-      "Espumas sin PBT, es un compuesto persistente, Bio acumulativo, Tóxico."
+      "Espuma sin PBT. Los PBT son compuestos persistentes, Bio acumulativo, Tóxico."
   }
 ];
 

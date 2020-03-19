@@ -7,6 +7,7 @@ import {
   scrollSpy,
   scroller
 } from "react-scroll";
+import Mailto from "react-protected-mailto";
 
 class ContactThree extends Component {
   constructor(props) {
@@ -38,12 +39,16 @@ class ContactThree extends Component {
                 <div className="section-title text-left mb--50">
                   <h2 className="title">{this.props.contactTitle}</h2>
                   <p className="description">
-                    I am available for contact. Connect with me via WhatsApp:{" "}
-                    <a href="tel:0050762765105">+507 6276-5105</a> or email:
-                    <a href="mailto:export@3famericas.com">
-                      {" "}
-                      export@3famericas.com
-                    </a>{" "}
+                    Estoy disponible para contacto. Conéctese con nosotros a
+                    través de WhatsApp:
+                    <a href="tel:0050762765105">+507 6276-5105</a> o email :
+                    <Mailto
+                      email="ventas@3famericas.com"
+                      headers={
+                        ({ subject: "Click en correo del sitio web" },
+                        { cc: "ventas@3famericas.com" })
+                      }
+                    />
                   </p>
                 </div>
                 <div className="form-wrapper">

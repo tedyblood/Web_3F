@@ -22,7 +22,7 @@ const FAS = [
   },
   {
     images: "04",
-    title: "Power",
+    title: "Fire Angel",
     category: "FAS"
   }
 ];

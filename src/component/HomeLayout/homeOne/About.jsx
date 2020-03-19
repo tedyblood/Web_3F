@@ -51,9 +51,8 @@ class About extends Component {
                         <h3 className="title">¿Donde estamos ubicados?</h3>
                         <p>
                           Gracias a sus fábricas en Inglaterra, Singapur,
-                          Marruecos y Panamá, nuestra empresa es capaz de
-                          responder rápidamente a nuestros clientes a nivel
-                          mundial.
+                          Panamá, nuestra empresa es capaz de responder
+                          rápidamente a nuestros clientes a nivel mundial.
                         </p>
                       </div>
                     </div>

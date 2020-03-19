@@ -15,11 +15,7 @@ const CTD = [
     title: "Cameleon",
     category: "CTD"
   },
-  {
-    images: "04",
-    title: "Phoenix",
-    category: "CTD"
-  },
+
   {
     images: "04",
     title: "Gecko",
@@ -27,12 +23,7 @@ const CTD = [
   },
   {
     images: "04",
-    title: "Iguane",
-    category: "CTD"
-  },
-  {
-    images: "04",
-    title: "Furcifer",
+    title: "Salamandre",
     category: "CTD"
   }
 ];

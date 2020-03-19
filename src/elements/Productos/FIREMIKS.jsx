@@ -1,12 +1,12 @@
 const FIREMIKS = [
   {
     images: "01",
-    title: "Bomba de Pistones",
+    title: "FIREMIKS-PP",
     category: "FIREMIKS "
   },
   {
     images: "02",
-    title: "Bomba de Pistones",
+    title: "FIREMIKS-GP",
     category: "FIREMIKS"
   },
 

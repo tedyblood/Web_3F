@@ -10,30 +10,62 @@ import {
 } from "react-scroll";
 import Mailto from "react-protected-mailto";
 
+import isEmail from "validator/lib/isEmail";
+import validator from "validator";
+
 class ContactThree extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      vForm: 0,
+      msgAlert: "",
       rnName: "",
       rnEmail: "",
       rnSubject: "",
       rnMessage: ""
     };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.leerAlertas = this.leerAlertas.bind(this);
   }
+
+  leerAlertas() {
+    return this.state.msgAlert;
+  }
+
   handleSubmit(e) {
     e.preventDefault();
-    axios
-      .post("http://localhost:3002/send", {
-        data: this.state
-      })
-      .then(response => {
-        if (response.data.status === "success") {
-          alert("Message Sent.");
-          this.resetForm();
-        } else if (response.data.status === "fail") {
-          alert("Message failed to send.");
-        }
-      });
+    this.setState({ vForm: 1 });
+
+    if (
+      // Inicio de verificador de campos vacios
+      this.state.rnName === "" ||
+      this.state.rnEmail === "" ||
+      this.state.rnSubject === "" ||
+      this.state.rnMessage === ""
+    ) {
+      console.log("Faltan campos por llenar");
+      this.setState({ msgAlert: "Faltan campos por llenar" });
+    } else if (validator.isEmail(this.state.rnEmail)) {
+      this.setState({ msgAlert: "Enviando el Correo" });
+      axios
+        .post("http://localhost:3002/send", {
+          data: this.state
+        })
+        .then(response => {
+          if (response.data.status === "success") {
+            // alert("Message Sent.");
+            this.setState({ msgAlert: "Su mensaje fué recibido exitosamente" });
+            this.resetForm();
+          } else if (response.data.status === "fail") {
+            // alert("Message failed to send.");
+            this.setState({ msgAlert: "Error al envíar el correo" });
+          }
+        });
+    } else {
+      this.setState({ msgAlert: "El correo no es válido" });
+      console.log("El correo no es válido");
+    } // Fin de  verificador de campos
   }
 
   resetForm() {
@@ -62,8 +94,8 @@ class ContactThree extends Component {
                     />
                   </p>
                 </div>
+                <h2>{this.leerAlertas()}</h2>
                 <div className="form-wrapper">
-                  <h2>{this.state.rnName}</h2>
                   <form onSubmit={this.handleSubmit.bind(this)}>
                     <label htmlFor="item01">
                       <input

@@ -17,7 +17,8 @@ class ContactThree extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      vForm: 0,
+      vForm: false,
+      msgAlertColor: "",
       msgAlert: "",
       rnName: "",
       rnEmail: "",
@@ -35,7 +36,7 @@ class ContactThree extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.setState({ vForm: 1 });
+    this.setState({ vForm: true });
 
     if (
       // Inicio de verificador de campos vacios
@@ -45,9 +46,15 @@ class ContactThree extends Component {
       this.state.rnMessage === ""
     ) {
       console.log("Faltan campos por llenar");
-      this.setState({ msgAlert: "Faltan campos por llenar" });
+      this.setState({
+        msgAlert: "Todos los campos son obligatorios.",
+        msgAlertColor: "msForm--fail "
+      });
     } else if (validator.isEmail(this.state.rnEmail)) {
-      this.setState({ msgAlert: "Enviando el Correo" });
+      this.setState({
+        msgAlert: "Enviando su Mensaje",
+        msgAlertColor: "msForm--process"
+      });
       axios
         .post("http://localhost:3002/send", {
           data: this.state
@@ -55,16 +62,27 @@ class ContactThree extends Component {
         .then(response => {
           if (response.data.status === "success") {
             // alert("Message Sent.");
-            this.setState({ msgAlert: "Su mensaje fué recibido exitosamente" });
+            this.setState({
+              msgAlert: "Gracias. Recibimos su mensaje.",
+              msgAlertColor: "msForm--sucess "
+            });
             this.resetForm();
           } else if (response.data.status === "fail") {
             // alert("Message failed to send.");
-            this.setState({ msgAlert: "Error al envíar el correo" });
+            this.setState({
+              msgAlert:
+                "Ups, tenemos un error al realizar el envío. Por favor intente comunicarse al ventas@3famericas.com",
+              msgAlertColor: "msForm--fail "
+            });
           }
         });
     } else {
       this.setState({ msgAlert: "El correo no es válido" });
       console.log("El correo no es válido");
+      this.setState({
+        msgAlert: "Ingrese un email Válido",
+        msgAlertColor: "msForm--fail "
+      });
     } // Fin de  verificador de campos
   }
 
@@ -82,9 +100,10 @@ class ContactThree extends Component {
                 <div className="section-title text-left mb--50">
                   <h2 className="title">{this.props.contactTitle}</h2>
                   <p className="description">
-                    Estoy disponible para contacto. Conéctese con nosotros a
-                    través de WhatsApp:
-                    <a href="tel:0050762765105">+507 6276-5105</a> o email :
+                    Estamos disponibles para contacto.
+                    <br /> Conéctese con nosotros a través de WhatsApp:
+                    <a href="tel:0050762765105">+507 6276-5105</a> <br />o email
+                    :
                     <Mailto
                       email="ventas@3famericas.com"
                       headers={
@@ -94,7 +113,15 @@ class ContactThree extends Component {
                     />
                   </p>
                 </div>
-                <h2>{this.leerAlertas()}</h2>
+                <div
+                  className={` ${
+                    this.state.vForm
+                      ? "msgForm " + this.state.msgAlertColor
+                      : ""
+                  }`}
+                >
+                  {this.leerAlertas()}
+                </div>
                 <div className="form-wrapper">
                   <form onSubmit={this.handleSubmit.bind(this)}>
                     <label htmlFor="item01">

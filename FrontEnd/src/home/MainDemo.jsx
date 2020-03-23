@@ -682,7 +682,7 @@ class MainDemo extends Component {
             </div>
             <div className="row">
               <div className="col-lg-12">
-                <Contacto contactImages="/assets/images/about/about-1.jpg" />
+                <Contacto contactImages="/assets/images/about/about-3.jpg" />
               </div>
             </div>
           </div>

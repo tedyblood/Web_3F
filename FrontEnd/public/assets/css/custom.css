@@ -91,6 +91,30 @@ img.Logo_3F {
   margin-top: 16px;
 }
 
+.msgForm {
+  position: absolute;
+  width: 92%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 200;
+  font-size: 1.5em;
+  border-radius: 41px;
+  text-align: center;
+  top: 82px;
+}
+.msForm--sucess {
+  background: #0b5728e0;
+}
+.msForm--process {
+  background: #033c86e0;
+}
+.msForm--fail {
+  background: #ff0014e0;
+}
+
 /****ANIMACION LOADING**/
 .centered {
   width: 100%;

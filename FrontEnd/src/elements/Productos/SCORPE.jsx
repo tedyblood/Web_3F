@@ -1,28 +1,33 @@
 const SCORPE = [
   {
-    images: "01",
+    images: "9-100",
     title: "VibraSearch",
     category: "SCORPE"
   },
   {
-    images: "02",
-    title: "Green Spirit",
+    images: "7-100",
+    title: "Beetle",
     category: "SCORPE"
   },
 
   {
-    images: "03",
+    images: "0-100",
     title: "Scorp’Air",
     category: "SCORPE"
   },
   {
-    images: "04",
-    title: "Beetle",
+    images: "8-100",
+    title: "Aquafast",
     category: "SCORPE"
   },
   {
-    images: "04",
-    title: "Aquafast",
+    images: "21-100",
+    title: "Green Spirit",
+    category: "SCORPE"
+  },
+  {
+    images: "1-100",
+    title: "COMBI SK",
     category: "SCORPE"
   }
 ];

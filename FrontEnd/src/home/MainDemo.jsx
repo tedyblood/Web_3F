@@ -145,8 +145,8 @@ class MainDemo extends Component {
                       >
                         <img
                           className="w-100"
-                          src={`/assets/images/blog/blog-${value.images}.jpg`}
-                          alt="Blog Images"
+                          src={`/assets/images/product/fas/${value.images}.jpg`}
+                          alt={value.title}
                         />
                       </Link>
                     </div>
@@ -223,8 +223,8 @@ class MainDemo extends Component {
                       >
                         <img
                           className="w-100"
-                          src={`/assets/images/blog/blog-${value.images}.jpg`}
-                          alt="Blog Images"
+                          src={`/assets/images/product/ctd/${value.images}.jpg`}
+                          alt={value.title}
                         />
                       </Link>
                     </div>
@@ -303,7 +303,7 @@ class MainDemo extends Component {
                       >
                         <img
                           className="w-100"
-                          src={`/assets/images/blog/blog-${value.images}.jpg`}
+                          src={`/assets/images/product/firemiks/${value.images}.jpg`}
                           alt="Blog Images"
                         />
                       </Link>
@@ -379,8 +379,8 @@ class MainDemo extends Component {
                       >
                         <img
                           className="w-100"
-                          src={`/assets/images/blog/blog-${value.images}.jpg`}
-                          alt="Blog Images"
+                          src={`/assets/images/product/rcy/${value.images}.jpg`}
+                          alt={value.title}
                         />
                       </Link>
                     </div>
@@ -456,8 +456,8 @@ class MainDemo extends Component {
                         >
                           <img
                             className="w-100"
-                            src={`/assets/images/blog/blog-${value.images}.jpg`}
-                            alt="Blog Images"
+                            src={`/assets/images/product/scorpe/${value.images}.jpg`}
+                            alt={value.title}
                           />
                         </Link>
                       </div>
@@ -539,8 +539,8 @@ class MainDemo extends Component {
                         >
                           <img
                             className="w-100"
-                            src={`/assets/images/blog/blog-${value.images}.jpg`}
-                            alt="Blog Images"
+                            src={`/assets/images/product/pok/${value.images}.jpg`}
+                            alt={value.title}
                           />
                         </Link>
                       </div>
@@ -616,8 +616,13 @@ class MainDemo extends Component {
                         >
                           <img
                             className="w-100"
-                            src={`/assets/images/blog/blog-${value.images}.jpg`}
-                            alt="Blog Images"
+                            src={`/assets/images/product/rl/${value.images}.jpg`}
+                            alt={
+                              "Maniquie de entrenamiento: " +
+                              value.title +
+                              "  - Marca: " +
+                              value.category
+                            }
                           />
                         </Link>
                       </div>
@@ -645,7 +650,7 @@ class MainDemo extends Component {
                             to="contacto"
                             className="rn-btn"
                           >
-                            Leer Mas
+                            Contacto
                           </Link>
                         </div>
                       </div>

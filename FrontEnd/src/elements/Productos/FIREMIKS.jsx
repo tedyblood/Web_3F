@@ -1,17 +1,17 @@
 const FIREMIKS = [
   {
-    images: "01",
+    images: "2-100",
     title: "FIREMIKS-PP",
     category: "FIREMIKS "
   },
   {
-    images: "02",
+    images: "1-100",
     title: "FIREMIKS-GP",
     category: "FIREMIKS"
   },
 
   {
-    images: "03",
+    images: "0-100",
     title: "Modelo Móvil",
     category: "FIREMIKS"
   }

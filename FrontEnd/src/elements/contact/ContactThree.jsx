@@ -102,8 +102,8 @@ class ContactThree extends Component {
                   <p className="description">
                     Estamos disponibles para contacto.
                     <br /> Conéctese con nosotros a través de WhatsApp:
-                    <a href="tel:0050762765105">+507 6276-5105</a> <br />o email
-                    :
+                    <a href="tel:0050762765105">+507 6276-5105</a> <br />o
+                    semail :
                     <Mailto
                       email="ventas@3famericas.com"
                       headers={

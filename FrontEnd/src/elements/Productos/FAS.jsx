@@ -1,27 +1,27 @@
 const FAS = [
   {
-    images: "01",
+    images: "4-100",
     title: "Ultra",
     category: "FAS"
   },
   {
-    images: "02",
+    images: "4-100",
     title: "Ultra Diesel",
     category: "FAS"
   },
 
   {
-    images: "03",
+    images: "1-100",
     title: "Mini",
     category: "FAS"
   },
   {
-    images: "04",
+    images: "0",
     title: "Phoenix",
     category: "FAS"
   },
   {
-    images: "04",
+    images: "0",
     title: "Fire Angel",
     category: "FAS"
   }

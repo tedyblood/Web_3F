@@ -1,118 +1,103 @@
 const Ruth_Lee = [
   {
-    images: "01",
-    title: "POLICE / LAW ENFORCEMENT",
+    images: "9-100",
+    title: "Policía",
     category: "Ruth Lee"
   },
   {
-    images: "02",
-    title: "AMBULANCE / EMS",
+    images: "6-100",
+    title: "Ambulancia",
     category: "Ruth Lee"
   },
 
   {
-    images: "03",
-    title: "FIRE & RESCUE",
+    images: "10-100",
+    title: "Rescate",
     category: "Ruth Lee"
   },
   {
-    images: "04",
-    title: "MILITARY",
+    images: "8-100",
+    title: "Militar",
     category: "Ruth Lee"
   },
   {
-    images: "04",
-    title: "LIFEGUARD",
+    images: "11-100",
+    title: "Rescate Técnico",
     category: "Ruth Lee"
   },
   {
-    images: "04",
-    title: "TECHNICAL RESCUE",
+    images: "14-100",
+    title: "Cuidado de Casa",
     category: "Ruth Lee"
   },
   {
-    images: "04",
-    title: "CARE HOME",
+    images: "13-100",
+    title: "Bariatrico",
     category: "Ruth Lee"
   },
   {
-    images: "04",
-    title: "BARIATRIC TRAINING",
+    images: "15-100",
+    title: "Carcel",
     category: "Ruth Lee"
   },
   {
-    images: "04",
-    title: "PRISONS",
+    images: "16-100",
+    title: "Aviación",
     category: "Ruth Lee"
   },
   {
-    images: "04",
-    title: "AVIATION",
+    images: "17-100",
+    title: "Hospitalario",
     category: "Ruth Lee"
   },
   {
-    images: "04",
-    title: "HOSPITAL & HEALTH CARE",
-    category: "Ruth Lee"
-  },
-  {
-    images: "04",
+    images: "18-100",
     title: "MOUNTAIN RESCUE",
     category: "Ruth Lee"
   },
   {
-    images: "04",
+    images: "19-100",
     title: "OFFSHORE",
     category: "Ruth Lee"
   },
   {
-    images: "04",
-    title: "WATER / SEA RESCUE",
+    images: "20-100",
+    title: "Rescate en Agua",
     category: "Ruth Lee"
   },
   {
-    images: "04",
-    title: "PORTS & HARBOUR",
+    images: "21-100",
+    title: "Puertos",
     category: "Ruth Lee"
   },
   {
-    images: "04",
-    title: "SHIPPING RESCUE TRAINING",
+    images: "22-100",
+    title: "Transporte Marítimo",
     category: "Ruth Lee"
   },
   {
-    images: "04",
-    title: "TRANSPORT & UTILITIES",
+    images: "25-100",
+    title: "Fábricas / Industrias",
     category: "Ruth Lee"
   },
   {
-    images: "04",
-    title: "FACTORY / INDUSTRY",
+    images: "24-100",
+    title: "Minería",
     category: "Ruth Lee"
   },
   {
-    images: "04",
-    title: "MINING",
+    images: "26-100",
+    title: "Construcción",
     category: "Ruth Lee"
   },
   {
-    images: "04",
-    title: "CHEMICAL / OIL INDUSTRY",
+    images: "12-100",
+    title: "Espacios Reducidos",
     category: "Ruth Lee"
   },
   {
-    images: "04",
-    title: "CONSTRUCTION",
-    category: "Ruth Lee"
-  },
-  {
-    images: "04",
-    title: "CONFINED SPACE",
-    category: "Ruth Lee"
-  },
-  {
-    images: "04",
-    title: "WORKING AT HEIGHT",
+    images: "27-100",
+    title: "Rescate Aéreo",
     category: "Ruth Lee"
   }
 ];

@@ -6,11 +6,12 @@ const creds = require("./config");
 var path = require("path");
 
 var transporter = nodemailer.createTransport({
-  host: "smtp.mailtrap.io",
-  port: 2525,
+  host: "chi-node26.websitehostserver.net",
+  port: 465,
+  secure: true, // use TLS
   auth: {
-    user: "b3ef2e71b639cb",
-    pass: "52eeca9244e84e"
+    user: "x@3f-latam.com",
+    pass: "AK9p$C0iHck}"
   }
 });
 
@@ -20,7 +21,7 @@ transporter.verify((error, success) => {
   if (error) {
     console.log(error);
   } else {
-    console.log("Server is ready to take messages");
+    console.log("Server is ready to take messages, working chinode");
   }
 });
 
@@ -33,7 +34,7 @@ router.post("/send", (req, res, next) => {
   var mail = {
     from: name + "<" + email + ">",
     to: "tedy.panama+test@gmail.com", // Change to email address that you want to receive messages on
-    subject: "New Message from Contact Form",
+    subject: "Nuevo Formulario desde sitio Web",
     text: content
   };
 

@@ -102,6 +102,18 @@ class Header extends Component {
                 <li className="has-droupdown">
                   <Link activeClass="false">Productos </Link>
                   <ul className="submenu">
+                  <li>
+                      <Link
+                        spy={true}
+                        smooth={true}
+                        offset={-200}
+                        duration={500}
+                        delay={500}
+                        to="covid"
+                      >
+                        Covid-19
+                      </Link>
+                    </li>
                     <li>
                       <Link
                         spy={true}

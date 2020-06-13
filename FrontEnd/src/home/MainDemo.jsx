@@ -7,13 +7,10 @@ import Footer from "../component/footer/Footer";
 
 import SliderOne from "../component/slider/SliderOne";
 import ServiceTwo from "../elements/service/ServiceTwo";
-import CounterOne from "../elements/counters/CounterOne";
-import Testimonial from "../elements/Testimonial";
 import About from "../component/HomeLayout/homeOne/About";
-import Portfolio from "../component/HomeLayout/homeOne/Portfolio";
 import BrandTwo from "../elements/BrandTwo";
 import Helmet from "../component/common/Helmet";
-import Contacto from "../elements/contact/ContactThree";
+import Contacto from "../elements/contact/ContactHubSpot";
 import WA from "../component/whatsapp/Whatsapp";
 
 //Importacion de Items
@@ -25,6 +22,10 @@ import SCORPE from "../elements/Productos/SCORPE";
 import POK from "../elements/Productos/POK";
 import Ruth_Lee from "../elements/Productos/Ruth_Lee";
 import EQUIPOSESPUMA from "../elements/Productos/EQUIPOSESPUMA";
+import covid from "../elements/Productos/covid";
+
+import HubspotForm from 'react-hubspot-form'
+
 
 import {
   Link,
@@ -32,7 +33,7 @@ import {
   Events,
   animateScroll as scroll,
   scrollSpy,
-  scroller
+  scroller,
 } from "react-scroll";
 
 class MainDemo extends Component {
@@ -108,6 +109,142 @@ class MainDemo extends Component {
           </div>
         </div>
         <hr></hr>
+        {/* End FAMILIA Area */}
+        {/* Start FAMILIA Area */}
+        <div className="rn-blog-area pt--120 bg_color--1 mb-dec--30">
+          <div className="container">
+            <div className="row align-items-end">
+              <div className="col-lg-10 col-md-12 col-sm-12 col-12">
+                <div className="section-title text-left">
+                  <Element name="covid" />
+                  <h3>A BASE DE OZONO</h3>
+                  <h2>EQUIPOS CONTRA EL COVID - 19</h2>
+                  <p>
+                    Para el Tratamiento de Desinfección y descontaminación
+                    Ambiental. Los cuales están especialmente fabricados para
+                    purificar el ambiente en sus 5 modelos de uso personal,
+                    individual o Industrial
+                  </p>
+                  <p>
+                    Ofrecemos una gama de Generadores de Ozono, para
+                    tratamientos de Choque Ambiental, los cuales funciona de
+                    forma autónoma no necesitan de otro producto adicional para
+                    su funcionamiento.{" "}
+                  </p>
+                  <p>
+                    El Ozono se obtiene al someter el oxigeno a descargas
+                    eléctricas controladas, por tanto el ozono es un gas
+                    oxidante muy potente, más eficaz que el cloro. Destruye
+                    bacterias, virus, hongos, y mohos rápidamente sin dejar
+                    residuos. Cada modelo genera la cantidad de Ozono adecuado
+                    de acuerdo a las dimensiones en m3 del lugar a desinfectar,
+                    para así eliminar los microorganismos, purificar el ambiente
+                    y tener un aire puro y libre de olores.
+                  </p>
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-12 d-lg-flex">
+                    <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+                      <h5>Aplicaciones SAB-GO-MINI:</h5>
+                      <ul>
+                        <li>Ideal para espacios pequeños; </li>
+                        <li>Oficinas, </li>
+                        <li>Consultorios médicos, </li>
+                        <li>Bufetes, </li>
+                        <li>Vehículos, </li>
+                        <li>Habitaciones, </li>
+                        <li>Hogar, </li>
+                        <li>Etc.</li>
+                      </ul>
+                    </div>
+                    <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+                      <h5>Aplicaciones para el resto de los modelos:</h5>
+                      <ul>
+                        <li>Hoteles</li>
+                        <li>Cines</li>
+                        <li>Restaurantes</li>
+                        <li>Salas de Reunión</li>
+                        <li>Tiendas</li>
+                        <li>Centros Comerciales</li>
+                        <li>Supermercados</li>
+                        <li>Etc.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-lg-2 col-md-12 col-sm-12 col-12 "
+                style={{ position: "relative", top: "-260px", right: "0" }}
+              >
+                <img
+                  src="./assets/images/logo/covid.png"
+                  className="w-100 p-3"
+                />
+              </div>
+            </div>
+            <div className="row mt--60 mt_sm--40">
+              {covid.map((value, i) => (
+                <div className="col-lg-3 col-md-6 col-12" key={i}>
+                  <div className="blog blog-style--1">
+                    <div className="thumbnail">
+                      <Link
+                        spy={true}
+                        smooth={true}
+                        offset={-200}
+                        duration={500}
+                        delay={500}
+                        to="contacto"
+                      >
+                        <img
+                          className="w-100"
+                          src={`/assets/images/product/covid/${value.images}.png`}
+                          alt={value.title}
+                        />
+                      </Link>
+                    </div>
+                    <div className="content">
+                      <p className="blogtype">{value.category}</p>
+                      <h4 className="title">
+                        <Link
+                          spy={true}
+                          smooth={true}
+                          offset={-200}
+                          duration={500}
+                          delay={500}
+                          to="contacto"
+                        >
+                          {value.title}
+                        </Link>
+                      </h4>
+                      <div className="blog-btn">
+                        <Link
+                          spy={true}
+                          smooth={true}
+                          offset={-200}
+                          duration={500}
+                          delay={500}
+                          to="contacto"
+                          className="rn-btn"
+                        >
+                          Contáctanos
+                        </Link>
+                      </div>
+                      <div className="blog-btn">
+                        <a
+                          className="rn-btn"
+                          href={`/assets/pdf/ozono/${value.pdf}`}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Ficha Técnica
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
         {/* End FAMILIA Area */}
         {/* Start FAMILIA Area */}
         <div className="rn-blog-area pt--120 bg_color--1 mb-dec--30">

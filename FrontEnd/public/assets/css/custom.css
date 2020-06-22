@@ -9,6 +9,156 @@
   font-style: normal;
 }
 
+.position-absolute.Logo__About>img {
+  background: white;
+  padding: 15px 17px 5px 15px;
+  border-radius: 5px;
+}
+.position-absolute.Logo__About {
+  top: -150px;
+  z-index: 1;
+}
+
+ul.brand-style-2 li {
+  flex-basis: 16%!important;}
+
+.mainmenunav ul.mainmenu > li > a {
+  color: #191a1b !important;
+}
+
+.header-area .header-wrapper a.rn-btn {
+  border: 2px solid #262626 !important;
+  color: #262626 !important;
+}
+
+svg.primary g path,
+svg.primary path {
+  fill: black !important;
+}
+
+
+
+.TextosFooter {
+  width: 100%;
+  margin-left: 5%;
+  padding-bottom: 30px;
+  position: absolute;
+  top: -330px;
+  z-index: 4;
+  left: -40px;
+}
+.AlturaMin__CASO1 {
+  min-height: 120px;
+}
+
+.Ajustes__Altura__Listas_One {
+  min-height: 339px;
+}
+.btn-primary {
+  color: #fff !important;
+  background-color: #ff0000 !important;
+  border-color: #ff0000 !important;
+}
+.btn-secondary {
+  color: #fff !important;
+  background-color: #484848 !important;
+  border-color: #313233 !important;
+}
+.description__setting {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 415px;
+}
+
+mark.Marca {
+  background: #373738;
+  color: #fff;
+  padding: 9px 15px;
+  border-radius: 2px;
+}
+
+ol.TwoCol__ten__Iems > li h5,
+ol.TwoCol > li h5,
+ol.TwoCol__Eigh__Iems > li h5 {
+  margin-left: 27px;
+  margin-top: 3px;
+  color: #373738;
+  padding: 0 7px;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  word-spacing: 0.5px;
+}
+
+ol.TwoCol__ten__Iems > li,
+ol.TwoCol li,
+ol.TwoCol__Eigh__Iems li {
+  font-size: 16px;
+  padding-bottom: 13px;
+  display: inline-block;
+  width: 100%;
+  padding-left: 0;
+}
+ol.TwoCol__ten__Iems > li,
+ol.TwoCol li:before,
+ol.TwoCol__Eigh__Iems li:before {
+  content: "✅";
+  width: 10%;
+  position: absolute;
+}
+ol.TwoCol__ten__Iems > li,
+ol.TwoCol > li:first-child,
+ol.TwoCol__Eigh__Iems > li:first-child {
+  /* border-top: 1px dotted; */
+}
+ol.TwoCol__ten__Iems > li,
+ol.TwoCol,
+ol.TwoCol__Eigh__Iems {
+  border-bottom: 1px dotted;
+  border-top: 1px dotted;
+  /* padding: 14px 0; */
+}
+
+ol.TwoCol__ten__Iems > li,
+ol.TwoCol > li,
+ol.TwoCol__Eigh__Iems > li {
+  padding: 10px;
+}
+
+ol.TwoCol > li:nth-child(even),
+ol.TwoCol__Eigh__Iems > li:nth-child(even) {
+  /* border-top: 1px dotted; */
+  /* background-color: lightcoral; */
+}
+
+ol.TwoCol {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  column-rule: dotted 1px #333;
+  list-style-type: decimal;
+  width: 100%;
+  padding-left: 0;
+  /* column-fill: balance; */
+}
+ol.TwoCol__Eigh__Iems {
+  height: 500px;
+}
+ol.TwoCol__ten__Iems {
+  height: 823px;
+}
+
+h2.title {
+  font-size: 3em !important;
+  color: #cb050e;
+}
+
+span.Subtitulo {
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 0;
+  color: #09987a;
+}
 
 h1.SFoam {
   font-family: "SF2";

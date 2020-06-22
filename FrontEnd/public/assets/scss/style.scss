@@ -1,7 +1,7 @@
 /*********************************************************************************
 
 	Template Name: Trydo React Degital Agency Template
-	Note: This is style css.
+	Note: This is style css. 2
 
 **********************************************************************************/
 
@@ -140,3 +140,13 @@
 @import 'template/service-details';
 @import 'template/dark-version';
 @import 'template/preview';
+
+
+/**************************************
+    RESPONSIVE CUSTOM
+***************************************/
+
+@import 'Responsive/laptop';
+@import 'Responsive/iphone';
+@import 'Responsive/tablet';
+@import 'Responsive/responsive';

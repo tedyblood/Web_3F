@@ -8,16 +8,7 @@ import Footer from "../component/footer/Footer";
 
 
 class ServiceDetails extends Component{
-    constructor () {
-        super()
-        this.state = {
-          isOpen: false
-        }
-        this.openModal = this.openModal.bind(this)
-    }
-    openModal () {
-        this.setState({isOpen: true})
-    }
+    
     render(){
         return(
             <React.Fragment>

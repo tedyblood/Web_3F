@@ -207,9 +207,16 @@
         &.title {
           color: #c6c9d8;
         }
+        &.title__two {
+          color: #000000;
+        }
       }
       p {
         color: #c6c9d8;
+      }
+      p {
+        color: #000000;
+        font-weight: 600;
       }
     }
   }

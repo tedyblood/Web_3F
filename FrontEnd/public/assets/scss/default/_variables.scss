@@ -1,9 +1,9 @@
 //===== Colors =====//
-$theme-color: #0b5728;
+$theme-color: #1da78a;
 $theme-color-btn: #fff;
 $body-color: #1d1d24;
-$heading-color: #1f1f25;
-$heading-color: #00634c;
+$heading-color: #ff0000;
+// $heading-color: #1da78a;
 $border-color: #d4d4d4;
 $white: #fff;
 
@@ -22,21 +22,23 @@ $fontList: $font-1;
     Color Variation 
 =================================*/
 $color-1: $theme-color;
-$color-2: #00634c;
+$color-2: #1da78a;
 $color-3: #cc050d;
-$color-4: #363636;
+$color-4: #1da78a;
+$color-5: #ff0000;
 $colorList: $color-1, $color-2, $color-3, $color-4;
 
 //===== Line Height =====//
 $body-line-height: 1.714286;
 //==== Font size =====//
 $body-font-size: 14px;
-$h1: 64px;
-$h2: 54px;
-$h3: 24px;
-$h4: 20px;
-$h5: 18px;
-$h6: 16px;
+$h1: 40px;
+// $h2: 54px;
+$h2: 35px;
+$h3: 19px;
+$h4: 17px;
+$h5: 16px;
+$h6: 15px;
 
 //===== Social Colors =====//
 $facebook: #3b5998;

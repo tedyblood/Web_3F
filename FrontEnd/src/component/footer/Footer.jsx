@@ -5,13 +5,13 @@ import {
   Events,
   animateScroll as scroll,
   scrollSpy,
-  scroller
+  scroller,
 } from "react-scroll";
 import {
   FaTwitter,
   FaInstagram,
   FaFacebookF,
-  FaLinkedinIn
+  FaLinkedinIn,
 } from "react-icons/fa";
 import Mailto from "react-protected-mailto";
 
@@ -19,7 +19,7 @@ const SocialShare = [
   { Social: <FaFacebookF />, link: "https://www.facebook.com/" },
   { Social: <FaLinkedinIn />, link: "https://www.linkedin.com/" },
   { Social: <FaInstagram />, link: "https://www.instagram.com/" },
-  { Social: <FaTwitter />, link: "https://twitter.com/" }
+  { Social: <FaTwitter />, link: "https://twitter.com/" },
 ];
 class Footer extends Component {
   render() {
@@ -40,12 +40,7 @@ class Footer extends Component {
                       Somos una empresa reconocida a nivel mundial, que pone a
                       su disposición una amplia gama de productos para prevenir
                       y actuar en todas las situaciones extremas de emergencias.
-                      Contamos con personal especializado, brindando así
-                      soluciones completas, comprobadas y certificadas a través
-                      de organismos internacionales. Nuestros servicios se
-                      extienden desde el soporte técnico, asesoría – evaluación
-                      y la realización de estudios personalizados, capacitación,
-                      mantenimiento y servicio post-ventas.
+                      
                     </span>
 
                     <Link
@@ -63,6 +58,9 @@ class Footer extends Component {
                 </div>
               </div>
               <div className="col-lg-6">
+                <div className="TextosFooter d-none d-lg-block d-xl-none">
+                  
+                </div>
                 <div className="footer-right" data-black-overlay="6">
                   <div className="row">
                     {/* Start Single Widget  */}
@@ -111,6 +109,7 @@ class Footer extends Component {
                     </div>
                     {/* End Single Widget  */}
                     {/* Start Single Widget  */}
+
                     <div className="col-lg-6 col-sm-6 col-12 mt_mobile--30">
                       <div className="footer-link">
                         <h4>Hablemos</h4>

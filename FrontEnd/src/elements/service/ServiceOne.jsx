@@ -6,7 +6,7 @@ import { Transition, animated } from "react-spring/renderprops";
 const ServiceList = [
   {
     icon: "ECO",
-    title: "Espuma Ecologica",
+    title: "Espúma Ecológica",
     description:
       "Ofrecemos una gama completa de espumógenos y aditivos contra incendios respetuosos con el medio ambiente."
   },
@@ -35,10 +35,10 @@ class ServiceOne extends Component {
             <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={i}>
               <div className="service service__style--1">
                 <div className="icon">
-                  <IconSvg name={val.icon} className="" />
+                  <IconSvg name={val.icon} className="primary" />
                 </div>
                 <div className="content">
-                  <h4 className="title">{val.title}</h4>
+                  <h4 className="title__two">{val.title}</h4>
                   <p>{val.description}</p>
                 </div>
               </div>

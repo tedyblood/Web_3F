@@ -320,7 +320,7 @@ class MainDemo extends Component {
               </div>
               <div className="col-lg-3 col-md-12 col-sm-12 col-12 d-flex flex-column justify-content-center align-items-center">
                 <img src="./assets/images/logo/ctd.png" className="w-100 p-3" />
-                <VideoModal idVideo="Gg8NCKSqE2w" channel="youtube" />
+                {/* <VideoModal idVideo="Gg8NCKSqE2w" channel="youtube" /> */}
               </div>
             </div>
 
@@ -463,7 +463,7 @@ class MainDemo extends Component {
               </div>
               <div className="col-lg-3 col-md-12 col-sm-12 col-12">
                 <img src="./assets/images/logo/rcy.png" className="w-100 p-3" />
-                <VideoModal idVideo="Gg8NCKSqE2w" channel="youtube" />
+                {/* <VideoModal idVideo="Gg8NCKSqE2w" channel="youtube" /> */}
               </div>
             </div>
             <div className="row">
@@ -561,7 +561,7 @@ class MainDemo extends Component {
                   src="./assets/images/logo/scorpe.png"
                   className="w-100 p-3"
                 />
-                <VideoModal idVideo="Gg8NCKSqE2w" channel="youtube" />
+                {/* <VideoModal idVideo="Gg8NCKSqE2w" channel="youtube" /> */}
               </div>
 
               <div className="row">
@@ -829,7 +829,7 @@ class MainDemo extends Component {
               </div>
               <div className="col-lg-3 col-md-12 col-sm-12 col-12">
                 <img src="./assets/images/logo/rl.png" className="w-100 p-3" />
-                <VideoModal idVideo="Gg8NCKSqE2w" channel="youtube" />
+                <VideoModal idVideo="Xv0ha0udXks" channel="youtube" />
               </div>
               <div className="row mr-3 ml-3 mt-5">
                 <h5>Maniquíes de entrenamiento</h5>

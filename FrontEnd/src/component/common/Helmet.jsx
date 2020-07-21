@@ -6,8 +6,8 @@ class PageHelmet extends Component {
         return (
             <React.Fragment>
                 <Helmet>
-                    <title>{this.props.pageTitle} || Smart Foams </title>
-                    <meta name="description" content="Espumas contra incendios y espuma y equipos contra incendios" />
+                    <title>{this.props.pageTitle} || Smart Foams || Espuma AFFF</title>
+                    <meta name="description" content="Equipos y sistemas de protección contra incendios - Equipos de Rescate - Espuma AFFF - Generadores de Ozono ✅" />
                 </Helmet>
             </React.Fragment>
         )

@@ -121,7 +121,7 @@ class Header extends Component {
                         offset={-200}
                         duration={500}
                         delay={500}
-                        to="Espuma"
+                        to="EColog"
                       >
                         Espuma Ecológica
                       </Link>
@@ -133,7 +133,7 @@ class Header extends Component {
                         offset={-200}
                         duration={500}
                         delay={500}
-                        to="Espuma"
+                        to="Productos_Especiales"
                       >
                         Absorbentes de Hidrocarburos
                       </Link>
@@ -145,7 +145,7 @@ class Header extends Component {
                         offset={-200}
                         duration={500}
                         delay={500}
-                        to="Espuma"
+                        to="Productos_Especiales"
                       >
                         Neutralizantes de Gases Tóxicos
                       </Link>
@@ -157,23 +157,11 @@ class Header extends Component {
                         offset={-200}
                         duration={500}
                         delay={500}
-                        to="Espuma"
+                        to="Productos_Especiales"
                       >
                         Espumas Convencionales
                       </Link>
-                    </li>
-                    <li>
-                      <Link
-                        spy={true}
-                        smooth={true}
-                        offset={-200}
-                        duration={500}
-                        delay={500}
-                        to="EquiposE"
-                      >
-                        Equipos de Espumas
-                      </Link>
-                    </li>
+                    </li>                    
                     <li>
                       <Link
                         spy={true}
@@ -258,6 +246,18 @@ class Header extends Component {
                         Maniquíes
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        spy={true}
+                        smooth={true}
+                        offset={-200}
+                        duration={500}
+                        delay={500}
+                        to="lab"
+                      >
+                        Laboratorio de Espuma
+                      </Link>
+                    </li>
                   </ul>
                 </li>
               </ul>
@@ -279,7 +279,8 @@ class Header extends Component {
             <div className="humberger-menu d-block d-lg-none pl--20">
               <span
                 onClick={this.menuTrigger}
-                className="menutrigger text-white"
+                // className="menutrigger text-white"
+                className="d-none d-lg-block d-xl-none"
               >
                 <FiMenu />
               </span>

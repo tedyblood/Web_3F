@@ -26,7 +26,7 @@ class ModalVideo extends Component {
                   className="btn btn-block btn-lg btn-success w-100"
                   onClick={this.openModal}
                 >
-                  Ver Video ►{" "}
+                  {this.props.text || "Ver Video ►"}                  
                 </button>
             </div>
         )

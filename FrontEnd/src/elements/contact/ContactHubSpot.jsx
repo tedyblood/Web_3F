@@ -66,8 +66,8 @@ class ContactThree extends Component {
               </div>
               <div className="col-lg-6 order-1 order-lg-2">
               <p>Contamos con personal especializado, brindando así soluciones completas, comprobadas y certificadas a través de organismos internacionales. Nuestros servicios se extienden desde el soporte técnico, asesoría – evaluación y la realización de estudios personalizados, capacitación, mantenimiento y servicio post-ventas.</p>
-                <div className="thumbnail mb_md--30 mb_sm--30">
-                  <img src={`${this.props.contactImages}`} alt="trydo" />
+                <div className="thumbnail mb_md--30 mb_sm--30 d-none ">
+                  <img src={`${this.props.contactImages}`} alt="3F Latam" />
                 </div>
                 <div>
                 

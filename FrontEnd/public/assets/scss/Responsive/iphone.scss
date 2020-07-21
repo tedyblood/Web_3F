@@ -2,6 +2,14 @@
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .footer-left .inner::after {display: none;}
+  h4.title {    background: rgba(255, 255, 255, 0.79);    text-align: center; }
+  .blog-style--1 .content h4.title a {    color: #f00; }
+  .blog-style--1 .thumbnail a:after {    background: none;   }
+  
+  .blog-style--1 .content {
+    padding: 50px 20px;
+}
     ol.TwoCol,
   ol.TwoCol__Eigh__Iems {
     column-count: 1 !important;
@@ -22,6 +30,13 @@
 
 /* Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .footer-left .inner::after {display: none;}
+  h4.title {    background: rgba(255, 255, 255, 0.79);    text-align: center; }
+  .blog-style--1 .content h4.title a {    color: #f00; }
+  .blog-style--1 .thumbnail a:after {    background: none;   }
+  .blog-style--1 .content {
+    padding: 50px 20px;
+}
     ol.TwoCol,
   ol.TwoCol__Eigh__Iems {
     column-count: 1 !important;
@@ -42,6 +57,13 @@
 
 /* Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .footer-left .inner::after {display: none;}
+  h4.title {    background: rgba(255, 255, 255, 0.79);    text-align: center; }
+  .blog-style--1 .content h4.title a {    color: #f00; }
+  .blog-style--1 .thumbnail a:after {    background: none;   }
+  .blog-style--1 .content {
+    padding: 50px 20px;
+}
     ol.TwoCol,
   ol.TwoCol__Eigh__Iems {
     column-count: 1 !important;
@@ -67,6 +89,13 @@
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .footer-left .inner::after {display: none;}
+  h4.title {    background: rgba(255, 255, 255, 0.79);    text-align: center; }
+  .blog-style--1 .content h4.title a {    color: #f00; }
+  .blog-style--1 .thumbnail a:after {    background: none;   }
+  .blog-style--1 .content {
+    padding: 50px 20px;
+}
     ol.TwoCol,
   ol.TwoCol__Eigh__Iems {
     column-count: 1 !important;
@@ -87,6 +116,13 @@
 
 /* Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .footer-left .inner::after {display: none;}
+  h4.title {    background: rgba(255, 255, 255, 0.79);    text-align: center; }
+  .blog-style--1 .content h4.title a {    color: #f00; }
+  .blog-style--1 .thumbnail a:after {    background: none;   }
+  .blog-style--1 .content {
+    padding: 50px 20px;
+}
     ol.TwoCol,
   ol.TwoCol__Eigh__Iems {
     column-count: 1 !important;
@@ -107,6 +143,13 @@
 
 /* Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .footer-left .inner::after {display: none;}
+  h4.title {    background: rgba(255, 255, 255, 0.79);    text-align: center; }
+  .blog-style--1 .content h4.title a {    color: #f00; }
+  .blog-style--1 .thumbnail a:after {    background: none;   }
+  .blog-style--1 .content {
+    padding: 50px 20px;
+}
     ol.TwoCol,
   ol.TwoCol__Eigh__Iems {
     column-count: 1 !important;
@@ -132,6 +175,13 @@
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .footer-left .inner::after {display: none;}
+  h4.title {    background: rgba(255, 255, 255, 0.79);    text-align: center; }
+  .blog-style--1 .content h4.title a {    color: #f00; }
+  .blog-style--1 .thumbnail a:after {    background: none;   }
+  .blog-style--1 .content {
+    padding: 50px 20px;
+}
     ol.TwoCol,
   ol.TwoCol__Eigh__Iems {
     column-count: 1 !important;
@@ -152,6 +202,13 @@
 
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .footer-left .inner::after {display: none;}
+  h4.title {    background: rgba(255, 255, 255, 0.79);    text-align: center; }
+  .blog-style--1 .content h4.title a {    color: #f00; }
+  .blog-style--1 .thumbnail a:after {    background: none;   }
+  .blog-style--1 .content {
+    padding: 50px 20px;
+}
     ol.TwoCol,
   ol.TwoCol__Eigh__Iems {
     column-count: 1 !important;
@@ -172,6 +229,13 @@
 
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .footer-left .inner::after {display: none;}
+  h4.title {    background: rgba(255, 255, 255, 0.79);    text-align: center; }
+  .blog-style--1 .content h4.title a {    color: #f00; }
+  .blog-style--1 .thumbnail a:after {    background: none;   }
+  .blog-style--1 .content {
+    padding: 50px 20px;
+}
     ol.TwoCol,
   ol.TwoCol__Eigh__Iems {
     column-count: 1 !important;
@@ -197,6 +261,16 @@
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .footer-left .inner::after {display: none;}
+  h4.title {    background: rgba(255, 255, 255, 0.79);    text-align: center; }
+  .blog-style--1 .content h4.title a {    color: #f00; }
+  .blog-style--1 .thumbnail a:after {    background: none;   }
+  ol.TwoCol__Eigh__Iems {
+    height: 610px;
+}
+  .blog-style--1 .content {
+    padding: 50px 20px;
+}
     ol.TwoCol,
   ol.TwoCol__Eigh__Iems {
     column-count: 1 !important;
@@ -217,6 +291,13 @@
 
 /* Portrait */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .footer-left .inner::after {display: none;}
+  h4.title {    background: rgba(255, 255, 255, 0.79);    text-align: center; }
+  .blog-style--1 .content h4.title a {    color: #f00; }
+  .blog-style--1 .thumbnail a:after {    background: none;   }
+  .blog-style--1 .content {
+    padding: 50px 20px;
+}
     ol.TwoCol,
   ol.TwoCol__Eigh__Iems {
     column-count: 1 !important;
@@ -237,6 +318,13 @@
 
 /* Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .footer-left .inner::after {display: none;}
+  h4.title {    background: rgba(255, 255, 255, 0.79);    text-align: center; }
+  .blog-style--1 .content h4.title a {    color: #f00; }
+  .blog-style--1 .thumbnail a:after {    background: none;   }
+  .blog-style--1 .content {
+    padding: 50px 20px;
+}
     ol.TwoCol,
   ol.TwoCol__Eigh__Iems {
     column-count: 1 !important;
@@ -262,6 +350,13 @@
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .footer-left .inner::after {display: none;}
+  h4.title {    background: rgba(255, 255, 255, 0.79);    text-align: center; }
+  .blog-style--1 .content h4.title a {    color: #f00; }
+  .blog-style--1 .thumbnail a:after {    background: none;   }
+  .blog-style--1 .content {
+    padding: 50px 20px;
+}
     ol.TwoCol,
   ol.TwoCol__Eigh__Iems {
     column-count: 1 !important;
@@ -282,6 +377,13 @@
 
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .footer-left .inner::after {display: none;}
+  h4.title {    background: rgba(255, 255, 255, 0.79);    text-align: center; }
+  .blog-style--1 .content h4.title a {    color: #f00; }
+  .blog-style--1 .thumbnail a:after {    background: none;   }
+  .blog-style--1 .content {
+    padding: 50px 20px;
+}
     ol.TwoCol,
   ol.TwoCol__Eigh__Iems {
     column-count: 1 !important;
@@ -302,6 +404,13 @@
 
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .footer-left .inner::after {display: none;}
+  h4.title {    background: rgba(255, 255, 255, 0.79);    text-align: center; }
+  .blog-style--1 .content h4.title a {    color: #f00; }
+  .blog-style--1 .thumbnail a:after {    background: none;   }
+  .blog-style--1 .content {
+    padding: 50px 20px;
+}
     ol.TwoCol,
   ol.TwoCol__Eigh__Iems {
     column-count: 1 !important;

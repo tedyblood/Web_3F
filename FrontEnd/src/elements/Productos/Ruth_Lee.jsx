@@ -90,7 +90,7 @@ const Ruth_Lee = [
     pdf__file: 'tecnical.pdf'
   },
   {
-    images: "10.jpg",
+    images: "1.jpg",
     path: "rl",
     title: "Rescate en el Agua",
     category: "Ruth Lee",

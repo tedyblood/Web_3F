@@ -71,7 +71,7 @@ class MainDemo extends Component {
             <div className="row align-items-end d-flex   justify-content-center align-items-center">
               <div className="col-lg-10 col-md-12 col-sm-12 col-12">
                 <div className="section-title text-left">
-                  <Element name="covid" />
+                  <Element name="EColog" />
                   <span className="Subtitulo">Nuestras Espumas Verdes</span>
                   <h2>Soluciones Espumantes Ecologicas</h2>
                   <p>
@@ -237,7 +237,7 @@ class MainDemo extends Component {
                 />
               </div>
             </div>
-            <LoadItems data={covid}/>
+            <LoadItems data={covid} altura="518"/>
             
           </div>
         </div>
@@ -438,7 +438,7 @@ class MainDemo extends Component {
                 </ol>
               </div>
             </div>
-            <LoadItems data={FIREMIKS}/>            
+            <LoadItems data={FIREMIKS} altura="357"/>            
           </div>
         </div>
         {/* End FAMILIA Area */}
@@ -533,7 +533,7 @@ class MainDemo extends Component {
                 </ol>
               </div>
             </div>
-            <LoadItems data={RCY}/>            
+            <LoadItems data={RCY} altura="391"/>            
             
           </div>
         </div>
@@ -619,7 +619,7 @@ class MainDemo extends Component {
                   </div>
                 </div>
               </div>
-              <LoadItems data={SCORPE}/>                  
+              <LoadItems data={SCORPE} altura="457"/>                  
             </div>
           </div>
         </div>
@@ -653,7 +653,7 @@ class MainDemo extends Component {
                 <VideoModal idVideo="lHoUaLDL2K8" channel="youtube" />
               </div>
               <div className="row mt-4 pr-3 pl-3">
-                <div className="col-lg-6 section-title mt-2   ">
+                <div className="col-lg-6 section-title mt-2 col-sm-12 col-xs-12 col-sm-12 ">
                   <h5>BOQUILLAS</h5>
                   <p className="AlturaMin__CASO1">
                     Con características de seguridad innovadora y una
@@ -699,7 +699,7 @@ class MainDemo extends Component {
                     </li>
                   </ol>
                 </div>
-                <div className="col-lg-6 section-title mt-2 col-sm-12 col-xs-12">
+                <div className="col-lg-6 section-title mt-2 col-sm-12 col-xs-12 col-sm-12 ">
                   <h5>MONITORES</h5>
                   <p className="AlturaMin__CASO1">
                     POK es el especialista de los monitores (cañones diseñados y
@@ -749,7 +749,7 @@ class MainDemo extends Component {
                 </div>
               </div>
               <div className="row  mr-1 ml-1">
-                <div className="col-lg-6 section-title mt-2 col-sm-12 col-xs-12">
+                <div className="col-lg-6 section-title mt-2 col-sm-12 col-xs-12 col-sm-12 ">
                   <h5>Carretes CARPOK</h5>
                   <p>
                     Nuestros carretes móviles CARPOK, se proponen en dos modelos
@@ -784,11 +784,11 @@ class MainDemo extends Component {
                     proporcionador y a petición un pitón de baja o media
                     expansión para varias aplicaciones.
                   </p>
-                  <h5>Pitones</h5>
+                  {/* <h5>Pitones</h5>
                   <p>
                     Tenemos pitones de Baja y Media expansión de varios modelos
                     y de diferentes caudales.
-                  </p>
+                  </p> */}
                   <h5>Alta expansión</h5>
                   <p>
                     Ofrecemos un generador móvil de alta expansión GHX 400. Para
@@ -804,7 +804,7 @@ class MainDemo extends Component {
                   </p>
                 </div>
               </div>
-              <LoadItems data={POK}/>               
+              <LoadItems data={POK} altura="457"/>               
             </div>
           </div>
         </div>
@@ -855,7 +855,7 @@ class MainDemo extends Component {
             <div className="row align-items-end">
               <div className="col-lg-8 col-md-12 col-sm-12 col-12">
                 <div className="section-title text-left">
-                  <Element name="rl" />
+                  <Element name="lab" />
                   <span className="Subtitulo">Monitoreo de Espumas.</span>
                   <h2>Laboratorio de Espuma.</h2>
                 </div>
@@ -872,7 +872,7 @@ class MainDemo extends Component {
                   para analizar la estabilidad y efectividad de los espumógenos.
                 </p>
                 </div>
-                <img src="./assets/images/bg/lab.jpeg" className="w-50 p-3" />
+                <img src="./assets/images/bg/lab.jpeg" className="w-50 p-3 d-none d-lg-block d-xl-none d-xl-block" alt="Laboratorio de Espuma"/>
               </div>              
             </div>
           </div>
@@ -880,7 +880,7 @@ class MainDemo extends Component {
         {/* End FAMILIA Area */}
 
         {/* Start Brand Area */}
-        <div className="rn-brand-area brand-separation bg_color--5 pb--120">
+        <div className="rn-brand-area brand-separation bg_color--5 pb--120  d-none d-lg-block d-xl-none d-xl-block">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">

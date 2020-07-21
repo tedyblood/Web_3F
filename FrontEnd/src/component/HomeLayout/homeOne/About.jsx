@@ -22,11 +22,11 @@ class About extends Component {
 
               <div className="col-lg-7 col-md-12">
                 <div className="position-absolute Logo__About">
-                <img
-                  className="w-25"
-                  src="/assets/images/logo/logo.png"
-                  alt="Logo 3F Latam"
-                />
+                  <img
+                    className="w-25"
+                    src="/assets/images/logo/logo.png"
+                    alt="Logo 3F Latam"
+                  />
                 </div>
                 <div className="about-inner inner">
                   <div className="section-title">
@@ -38,7 +38,9 @@ class About extends Component {
                       <div className="about-us-list">
                         <h3 className="title">¿Por qué nosotros?</h3>
                         <p>
-                        Nuestra principal misión es la creación y fabricación de productos innovadores en la Química, la mecánica, y la electrónica. <br />
+                          Nuestra principal misión es la creación y fabricación
+                          de productos innovadores en la Química, la mecánica, y
+                          la electrónica. <br />
                           Estamos Certificados bajo la Norma <br />
                           <span className="font-weight-bold">
                             ISO: 9001-2015
@@ -50,10 +52,11 @@ class About extends Component {
                       <div className="about-us-list">
                         <h3 className="title">¿Dónde estamos?</h3>
                         <p>
-                          Gracias a sus fabricas en Europa, (Uk, Francia) y
-                          Sucursales en Singapour, Panamá y Mexico, nuestra
-                          Organización es capaz de responder rápidamente a
-                          nuestros clientes a nivel Mundial.
+                          Gracias a sus Fabricas en Europa, (Uk, Francia) y sus
+                          sucursales en Asia; Singapour y en América Latina:
+                          Panamá, Ecuador, Peru, Chile, Bolivia, Colombia y
+                          Mexico, nuestra Organización es capaz de responder
+                          rápidamente a nuestros clientes a nivel Mundial.
                         </p>
                       </div>
                     </div>

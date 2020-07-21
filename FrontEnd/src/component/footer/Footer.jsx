@@ -16,10 +16,10 @@ import {
 import Mailto from "react-protected-mailto";
 
 const SocialShare = [
-  { Social: <FaFacebookF />, link: "https://www.facebook.com/" },
-  { Social: <FaLinkedinIn />, link: "https://www.linkedin.com/" },
-  { Social: <FaInstagram />, link: "https://www.instagram.com/" },
-  { Social: <FaTwitter />, link: "https://twitter.com/" },
+  { Social: <FaFacebookF />, link: "facebook.com/3F-Latam-104543221324473/?business_id=1026285247383950" },
+  // { Social: <FaLinkedinIn />, link: "https://www.linkedin.com/" },
+  { Social: <FaInstagram />, link: "https://www.instagram.com/3f_latam/" },
+  // { Social: <FaTwitter />, link: "https://twitter.com/" },
 ];
 class Footer extends Component {
   render() {
@@ -69,16 +69,7 @@ class Footer extends Component {
                         <h4>Enlaces</h4>
                         <ul className="ft-link">
                           <li>
-                            <Link
-                              spy={true}
-                              smooth={true}
-                              offset={-200}
-                              duration={500}
-                              delay={500}
-                              to="Nosotros"
-                            >
-                              Nosotros
-                            </Link>
+                            <a href="https://www.3fff.co.uk/" target="_blank" rel="noopener noreferrer">Página Principal</a>
                           </li>
                           <li>
                             <Link
@@ -144,6 +135,7 @@ class Footer extends Component {
                     <div className="col-lg-12">
                       <div className="copyright-text">
                         <p>Copyright © 2020 3F Latam</p>
+                        <span style={{"font-size": "10px", "color": "#abbec9"}} >Made with ❤ by <a href="https://www.socialmedia-panama.com/" target="_Blank" without rel="noopener noreferrer">Social Media Panamá</a></span> 
                       </div>
                     </div>
                   </div>

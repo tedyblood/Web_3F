@@ -26,6 +26,7 @@ import Ruth_Lee from "../elements/Productos/Ruth_Lee";
 import EQUIPOSESPUMA from "../elements/Productos/EQUIPOSESPUMA";
 import covid from "../elements/Productos/covid";
 import SF from "../elements/Productos/sf";
+import water from "../elements/Productos/waterlogies"
 
 import HubspotForm from "react-hubspot-form";
 import ModalVideo from "react-modal-video";
@@ -72,7 +73,7 @@ class MainDemo extends Component {
               <div className="col-lg-10 col-md-12 col-sm-12 col-12">
                 <div className="section-title text-left">
                   <Element name="EColog" />
-                  <span className="Subtitulo">Nuestras Espumas Verdes</span>
+                  <span className="Subtitulo">Nuestras Espumas Verdes.</span>
                   <h2>Soluciones Espumantes Ecologicas</h2>
                   <p>
                     3F ofrece al mundo una gama completa de espumógenos y
@@ -112,7 +113,7 @@ class MainDemo extends Component {
                 <img src="./assets/images/logo/3F_SMART-FOAM_SP-3.png" />
               </div>
             </div>
-            <LoadItems data={SF}/>            
+            <LoadItems data={SF} />
           </div>
         </div>
         {/* End FAMILIA Area */}
@@ -237,8 +238,7 @@ class MainDemo extends Component {
                 />
               </div>
             </div>
-            <LoadItems data={covid} altura="518"/>
-            
+            <LoadItems data={covid} altura="518" />
           </div>
         </div>
         {/* End FAMILIA Area */}
@@ -296,8 +296,7 @@ class MainDemo extends Component {
                 penetración.
               </p>
             </div>
-            <LoadItems data={FAS}/> 
-            
+            <LoadItems data={FAS} />
           </div>
         </div>
         {/* End FAMILIA Area */}
@@ -368,7 +367,7 @@ class MainDemo extends Component {
                 </li>
               </ol>
             </div>
-            <LoadItems data={CTD}/>             
+            <LoadItems data={CTD} />
           </div>
         </div>
         {/* End FAMILIA Area */}
@@ -438,7 +437,7 @@ class MainDemo extends Component {
                 </ol>
               </div>
             </div>
-            <LoadItems data={FIREMIKS} altura="357"/>            
+            <LoadItems data={FIREMIKS} altura="357" />
           </div>
         </div>
         {/* End FAMILIA Area */}
@@ -533,8 +532,7 @@ class MainDemo extends Component {
                 </ol>
               </div>
             </div>
-            <LoadItems data={RCY} altura="391"/>            
-            
+            <LoadItems data={RCY} altura="391" />
           </div>
         </div>
         {/* End FAMILIA Area */}
@@ -619,7 +617,7 @@ class MainDemo extends Component {
                   </div>
                 </div>
               </div>
-              <LoadItems data={SCORPE} altura="457"/>                  
+              <LoadItems data={SCORPE} altura="457" />
             </div>
           </div>
         </div>
@@ -804,7 +802,7 @@ class MainDemo extends Component {
                   </p>
                 </div>
               </div>
-              <LoadItems data={POK} altura="457"/>               
+              <LoadItems data={POK} altura="457" />
             </div>
           </div>
         </div>
@@ -842,8 +840,89 @@ class MainDemo extends Component {
                   fuego, en alturas, en caso de explosiones y atentados.
                 </p>
               </div>
-              <LoadItems data={Ruth_Lee}/>   
-              
+              <LoadItems data={Ruth_Lee} />
+            </div>
+          </div>
+        </div>
+        {/* End FAMILIA Area */}
+
+        {/* Start FAMILIA Area */}
+        <div className="rn-blog-area pt--120 bg_color--1 mb-dec--30">
+          <div className="container">
+            <div className="row align-items-end">
+              <div className="col-lg-8 col-md-12 col-sm-12 col-12">
+                <div className="section-title text-left">
+                  <Element name="rl" />
+                  <span className="Subtitulo">WATEROLOGIES</span>
+                  <h2>Sistemas de Potabilización del Agua</h2>
+                  <p>
+                    Nuestra tecnología consiste en diseñar equipos para el
+                    control, depuración y potabilización del agua (contaminadas,
+                    sucias, turbias), con sistemas patentados, utilizando y
+                    combinando varias técnicas de filtración.
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-12 col-sm-12 col-12">
+                <img src="./assets/images/logo/waterlogies.png" className="w-100 p-3" />
+                <VideoModal idVideo="2LVMq12NMLY" channel="youtube" />
+              </div>
+              <div className="row mr-3 ml-3 mt-5">
+                <h5>Sistemas Autónomos de filtración y potabilización de agua para lugares remotos</h5>
+                <p>
+                  Ofrecemos una gama de equipos portátiles de filtración y
+                  potabilización de agua para lugares remotos. Nuestros sistemas
+                  son autónomos sin productos químicos ni energía externa,
+                  especialmente diseñados para adaptarse a las diferentes
+                  situaciones y/o necesidades de emergencia que se encuentran en
+                  el mundo.
+                </p>
+              </div>
+              <div className="row  mr-1 ml-1 mt-5">
+                <div className="col-lg-6 section-title mt-2 col-sm-12 col-xs-12 col-sm-12 ">  
+                  <h5>Elimina el 99.9% de bacterias esporas, hongos</h5>
+                  <p>
+                  Nuestros equipos Eliminan el 99.9% de bacterias, esporas, hongos. Desinfectamos con un sustituto natural del hipoclorito. No provoca irritaciones. Eliminación total de olores.
+                  </p>
+                  
+                  <div>
+                    <h5>Variedad de Modelos</h5>
+                    <p>
+                    Para responder a la necesidad de nuestros clientes; grupos y comunidades en general, proponemos modelos desde 60 l/día – para una familia – hasta 20,000 l/día correspondiendo a unas 6000 personas.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-lg-6 section-title mt-2 col-sm-12 col-xs-12">
+                  <h5>Equipos Autónomos</h5>
+                  <p>
+                  Se propone según los modelos un funcionamiento con SmartPhone, Panel Solar, Batería, Generador
+                  </p>
+                  {/* <h5>Pitones</h5>
+                  <p>
+                    Tenemos pitones de Baja y Media expansión de varios modelos
+                    y de diferentes caudales.
+                  </p> */}
+                  <h5>Sencillez de Instalación y de Uso</h5>
+                  <p>
+                  Los equipos constan de una bomba – a colocar en el agua a tratar –Filtros de purificación y las conexiones para la salida
+                  </p> 
+                  <h4>Ventajas</h4>
+                  <ol className="TwoCol">
+                    <li>
+                      <h5>Durabilidad de los equipos</h5>
+                    </li>
+                    <li>
+                      <h5>Equipos compactos portátiles</h5>
+                    </li>
+                    <li>
+                      <h5>Gama dedicada para el agua de mar</h5>
+                    </li>
+                    
+                  </ol>
+                  
+                </div>
+              </div>
+              <LoadItems data={water} />
             </div>
           </div>
         </div>
@@ -860,20 +939,27 @@ class MainDemo extends Component {
                   <h2>Laboratorio de Espuma.</h2>
                 </div>
               </div>
-              
+
               <div className="row mr-3 ml-3 mt-5">
                 <div className="col-lg-6 col-sm-12 col-xs-12">
-                <p>3F Américas ofrece servicios de monitoreo de sus Espumas</p>
-                <p>
-                  Con este servicio nuestros clientes pueden tener la garantía
-                  que los elementos espumógenos tendrán una alta efectividad en
-                  caso de registrarse un evento. Nuestros Laboratorios se
-                  encuentran en Inglaterra y contamos con tecnología de punta
-                  para analizar la estabilidad y efectividad de los espumógenos.
-                </p>
+                  <p>
+                    3F Américas ofrece servicios de monitoreo de sus Espumas
+                  </p>
+                  <p>
+                    Con este servicio nuestros clientes pueden tener la garantía
+                    que los elementos espumógenos tendrán una alta efectividad
+                    en caso de registrarse un evento. Nuestros Laboratorios se
+                    encuentran en Inglaterra y contamos con tecnología de punta
+                    para analizar la estabilidad y efectividad de los
+                    espumógenos.
+                  </p>
                 </div>
-                <img src="./assets/images/bg/lab.jpeg" className="w-50 p-3 d-none d-lg-block d-xl-none d-xl-block" alt="Laboratorio de Espuma"/>
-              </div>              
+                <img
+                  src="./assets/images/bg/lab.jpeg"
+                  className="w-50 p-3 d-none d-lg-block d-xl-none d-xl-block"
+                  alt="Laboratorio de Espuma"
+                />
+              </div>
             </div>
           </div>
         </div>
